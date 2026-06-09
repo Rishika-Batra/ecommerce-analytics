@@ -1,0 +1,2358 @@
+[0m21:40:57.018457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ee1be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1112a3750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1112a34d0>]}
+
+
+============================== 21:40:57.022239 | 17721f43-9192-4a14-82b2-d07f67c9d8a2 ==============================
+[0m21:40:57.022239 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:40:57.022597 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/logs', 'quiet': 'False', 'static_parser': 'True', 'version_check': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '.', 'debug': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'log_format': 'default', 'no_print': 'None', 'warn_error': 'None', 'write_json': 'True', 'empty': 'False', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'printer_width': '80', 'partial_parse': 'True', 'log_cache_events': 'False'}
+[0m21:40:57.703814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065d1350>]}
+[0m21:40:57.734630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11137abe0>]}
+[0m21:40:57.736001 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m21:40:57.796177 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:40:57.796659 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:40:57.796839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113eab50>]}
+[0m21:40:58.492386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1122488c0>]}
+[0m21:40:58.540274 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/manifest.json
+[0m21:40:58.541762 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/semantic_manifest.json
+[0m21:40:58.549545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1123b9710>]}
+[0m21:40:58.549811 [info ] [MainThread]: Found 9 models, 10 data tests, 5 sources, 485 macros
+[0m21:40:58.549971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1115f60d0>]}
+[0m21:40:58.551107 [info ] [MainThread]: 
+[0m21:40:58.551262 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:40:58.551382 [info ] [MainThread]: 
+[0m21:40:58.551612 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:40:58.554277 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecommerce'
+[0m21:40:58.580640 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce"
+[0m21:40:58.580890 [debug] [ThreadPool]: On list_ecommerce: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ecommerce"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ecommerce"'
+    
+  
+  
+[0m21:40:58.581053 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:40:58.591533 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m21:40:58.592362 [debug] [ThreadPool]: On list_ecommerce: Close
+[0m21:40:58.592740 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ecommerce, now create_ecommerce_main)
+[0m21:40:58.592988 [debug] [ThreadPool]: Creating schema "database: "ecommerce"
+schema: "main"
+"
+[0m21:40:58.596452 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m21:40:58.596655 [debug] [ThreadPool]: On create_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "create_ecommerce_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='ecommerce'
+        and type='sqlite'
+    
+  
+[0m21:40:58.596795 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:40:58.597459 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:40:58.598162 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m21:40:58.598299 [debug] [ThreadPool]: On create_ecommerce_main: BEGIN
+[0m21:40:58.598516 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:40:58.598627 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m21:40:58.598738 [debug] [ThreadPool]: On create_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "create_ecommerce_main"} */
+
+    
+    
+        create schema if not exists "ecommerce"."main"
+    
+[0m21:40:58.599039 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:40:58.599420 [debug] [ThreadPool]: On create_ecommerce_main: COMMIT
+[0m21:40:58.599542 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m21:40:58.599644 [debug] [ThreadPool]: On create_ecommerce_main: COMMIT
+[0m21:40:58.599815 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:40:58.599932 [debug] [ThreadPool]: On create_ecommerce_main: Close
+[0m21:40:58.600674 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ecommerce_main, now list_ecommerce_main)
+[0m21:40:58.603571 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m21:40:58.603719 [debug] [ThreadPool]: On list_ecommerce_main: BEGIN
+[0m21:40:58.603830 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:40:58.604150 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:40:58.604269 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m21:40:58.604397 [debug] [ThreadPool]: On list_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ecommerce_main"} */
+select
+      'ecommerce' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'ecommerce'
+  
+[0m21:40:58.606492 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:40:58.607109 [debug] [ThreadPool]: On list_ecommerce_main: ROLLBACK
+[0m21:40:58.607630 [debug] [ThreadPool]: Failed to rollback 'list_ecommerce_main'
+[0m21:40:58.607756 [debug] [ThreadPool]: On list_ecommerce_main: Close
+[0m21:40:58.608036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112563dd0>]}
+[0m21:40:58.608292 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:40:58.608424 [debug] [MainThread]: On master: BEGIN
+[0m21:40:58.608536 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:40:58.608801 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:40:58.608917 [debug] [MainThread]: On master: COMMIT
+[0m21:40:58.609023 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:40:58.609125 [debug] [MainThread]: On master: COMMIT
+[0m21:40:58.609307 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:40:58.609418 [debug] [MainThread]: On master: Close
+[0m21:40:58.611412 [debug] [Thread-1 (]: Began running node model.ecommerce_analytics.stg_customers
+[0m21:40:58.611653 [info ] [Thread-1 (]: 1 of 9 START sql view model main.stg_customers ................................. [RUN]
+[0m21:40:58.611836 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.stg_products
+[0m21:40:58.611990 [debug] [Thread-3 (]: Began running node model.ecommerce_analytics.stg_orders
+[0m21:40:58.612168 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.stg_order_items
+[0m21:40:58.612409 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ecommerce_main, now model.ecommerce_analytics.stg_customers)
+[0m21:40:58.612635 [info ] [Thread-4 (]: 4 of 9 START sql view model main.stg_products .................................. [RUN]
+[0m21:40:58.612867 [info ] [Thread-3 (]: 3 of 9 START sql view model main.stg_orders .................................... [RUN]
+[0m21:40:58.613092 [info ] [Thread-2 (]: 2 of 9 START sql view model main.stg_order_items ............................... [RUN]
+[0m21:40:58.613289 [debug] [Thread-1 (]: Began compiling node model.ecommerce_analytics.stg_customers
+[0m21:40:58.613536 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.ecommerce_analytics.stg_products'
+[0m21:40:58.613748 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.ecommerce_analytics.stg_orders'
+[0m21:40:58.613950 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.ecommerce_analytics.stg_order_items'
+[0m21:40:58.617469 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_customers"
+[0m21:40:58.617662 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.stg_products
+[0m21:40:58.617824 [debug] [Thread-3 (]: Began compiling node model.ecommerce_analytics.stg_orders
+[0m21:40:58.617975 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.stg_order_items
+[0m21:40:58.619426 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_products"
+[0m21:40:58.620584 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_orders"
+[0m21:40:58.621845 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_order_items"
+[0m21:40:58.622511 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.stg_order_items
+[0m21:40:58.628634 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.stg_products
+[0m21:40:58.639334 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_products"
+[0m21:40:58.639593 [debug] [Thread-1 (]: Began executing node model.ecommerce_analytics.stg_customers
+[0m21:40:58.639815 [debug] [Thread-3 (]: Began executing node model.ecommerce_analytics.stg_orders
+[0m21:40:58.641124 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_customers"
+[0m21:40:58.641986 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_order_items"
+[0m21:40:58.643445 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_orders"
+[0m21:40:58.643933 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:40:58.644118 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:40:58.644284 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:40:58.644440 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:40:58.644585 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: BEGIN
+[0m21:40:58.644743 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: BEGIN
+[0m21:40:58.644906 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: BEGIN
+[0m21:40:58.645047 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: BEGIN
+[0m21:40:58.645192 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:40:58.645332 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:40:58.645469 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:40:58.645631 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:40:58.646273 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.646474 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:40:58.646645 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.646793 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.646935 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m21:40:58.647095 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */
+
+  
+  create view "ecommerce"."main"."stg_orders__dbt_tmp" as (
+    with source as (
+    select * from read_csv_auto('../data/raw_orders.csv')
+)
+
+select
+    cast(order_id as varchar) as order_id,
+    cast(customer_id as varchar) as customer_id,
+    cast(order_date as timestamp) as order_date,
+    cast(total_amount as double) as total_amount,
+    cast(status as varchar) as status
+from source
+  );
+
+[0m21:40:58.647254 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:40:58.647394 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:40:58.647535 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:40:58.647819 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_products"} */
+
+  
+  create view "ecommerce"."main"."stg_products__dbt_tmp" as (
+    with source as (
+    select * from read_csv_auto('../data/raw_products.csv')
+)
+
+select
+    cast(product_id as varchar) as product_id,
+    cast(product_name as varchar) as product_name,
+    cast(category as varchar) as category,
+    cast(price as double) as price,
+    cast(stock_quantity as integer) as stock_quantity
+from source
+  );
+
+[0m21:40:58.648011 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_order_items"} */
+
+  
+  create view "ecommerce"."main"."stg_order_items__dbt_tmp" as (
+    with source as (
+    select * from read_csv_auto('../data/raw_order_items.csv')
+)
+
+select
+    cast(item_id as varchar) as item_id,
+    cast(order_id as varchar) as order_id,
+    cast(product_id as varchar) as product_id,
+    cast(quantity as integer) as quantity,
+    cast(price as double) as price
+from source
+  );
+
+[0m21:40:58.648203 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_customers"} */
+
+  
+  create view "ecommerce"."main"."stg_customers__dbt_tmp" as (
+    with source as (
+    select * from read_csv_auto('../data/raw_customers.csv')
+)
+
+select
+    cast(customer_id as varchar) as customer_id,
+    cast(join_date as date) as join_date,
+    cast(age as integer) as age,
+    cast(gender as varchar) as gender,
+    cast(country as varchar) as country,
+    cast(acquisition_channel as varchar) as acquisition_channel
+from source
+  );
+
+[0m21:40:58.650934 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m21:40:58.654236 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:40:58.654470 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_products"} */
+alter view "ecommerce"."main"."stg_products__dbt_tmp" rename to "stg_products"
+[0m21:40:58.654926 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.661363 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: COMMIT
+[0m21:40:58.661626 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:40:58.661784 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: COMMIT
+[0m21:40:58.662097 [debug] [Thread-2 (]: SQL status: OK in 0.014 seconds
+[0m21:40:58.663842 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:40:58.664029 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_order_items"} */
+alter view "ecommerce"."main"."stg_order_items__dbt_tmp" rename to "stg_order_items"
+[0m21:40:58.664238 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:40:58.667198 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:40:58.667415 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_products"} */
+
+      drop view if exists "ecommerce"."main"."stg_products__dbt_backup" cascade
+    
+[0m21:40:58.667584 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m21:40:58.668344 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: COMMIT
+[0m21:40:58.668523 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:40:58.668680 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: COMMIT
+[0m21:40:58.668862 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.670069 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: Close
+[0m21:40:58.670276 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.671662 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:40:58.672167 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_order_items"} */
+
+      drop view if exists "ecommerce"."main"."stg_order_items__dbt_backup" cascade
+    
+[0m21:40:58.672501 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.673140 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: Close
+[0m21:40:58.673321 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11289a0a0>]}
+[0m21:40:58.673567 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c32e90>]}
+[0m21:40:58.674060 [debug] [Thread-3 (]: SQL status: OK in 0.026 seconds
+[0m21:40:58.673866 [info ] [Thread-4 (]: 4 of 9 OK created sql view model main.stg_products ............................. [[32mOK[0m in 0.06s]
+[0m21:40:58.675878 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:40:58.674279 [info ] [Thread-2 (]: 2 of 9 OK created sql view model main.stg_order_items .......................... [[32mOK[0m in 0.06s]
+[0m21:40:58.676192 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.stg_products
+[0m21:40:58.676368 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */
+alter view "ecommerce"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m21:40:58.676591 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.stg_order_items
+[0m21:40:58.676769 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.stg_web_events
+[0m21:40:58.677149 [info ] [Thread-4 (]: 5 of 9 START sql view model main.stg_web_events ................................ [RUN]
+[0m21:40:58.677388 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_products, now model.ecommerce_analytics.stg_web_events)
+[0m21:40:58.677557 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.677716 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.stg_web_events
+[0m21:40:58.678336 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: COMMIT
+[0m21:40:58.679669 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_web_events"
+[0m21:40:58.679905 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:40:58.680145 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: COMMIT
+[0m21:40:58.680487 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.stg_web_events
+[0m21:40:58.682243 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_web_events"
+[0m21:40:58.682452 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:40:58.683458 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:40:58.683630 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */
+
+      drop view if exists "ecommerce"."main"."stg_orders__dbt_backup" cascade
+    
+[0m21:40:58.683916 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:40:58.684078 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: BEGIN
+[0m21:40:58.684229 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.684373 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:40:58.685059 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: Close
+[0m21:40:58.685438 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ae4fd0>]}
+[0m21:40:58.685880 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:40:58.685734 [info ] [Thread-3 (]: 3 of 9 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.07s]
+[0m21:40:58.686069 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:40:58.686292 [debug] [Thread-3 (]: Finished running node model.ecommerce_analytics.stg_orders
+[0m21:40:58.686464 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_web_events"} */
+
+  
+  create view "ecommerce"."main"."stg_web_events__dbt_tmp" as (
+    with source as (
+    select * from read_csv_auto('../data/raw_web_events.csv')
+)
+
+select
+    cast(event_id as varchar) as event_id,
+    cast(customer_id as varchar) as customer_id,
+    cast(session_id as varchar) as session_id,
+    cast(event_timestamp as timestamp) as event_timestamp,
+    cast(event_type as varchar) as event_type,
+    cast(product_id as varchar) as product_id
+from source
+  );
+
+[0m21:40:58.686849 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.fct_daily_sales
+[0m21:40:58.687073 [debug] [Thread-3 (]: Began running node model.ecommerce_analytics.fct_orders
+[0m21:40:58.687322 [info ] [Thread-2 (]: 6 of 9 START sql table model main.fct_daily_sales .............................. [RUN]
+[0m21:40:58.687652 [info ] [Thread-3 (]: 7 of 9 START sql table model main.fct_orders ................................... [RUN]
+[0m21:40:58.687927 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_order_items, now model.ecommerce_analytics.fct_daily_sales)
+[0m21:40:58.688150 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_orders, now model.ecommerce_analytics.fct_orders)
+[0m21:40:58.688323 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.fct_daily_sales
+[0m21:40:58.688479 [debug] [Thread-3 (]: Began compiling node model.ecommerce_analytics.fct_orders
+[0m21:40:58.689768 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.fct_daily_sales"
+[0m21:40:58.691378 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_analytics.fct_orders"
+[0m21:40:58.691861 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.fct_daily_sales
+[0m21:40:58.692021 [debug] [Thread-3 (]: Began executing node model.ecommerce_analytics.fct_orders
+[0m21:40:58.701951 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.fct_daily_sales"
+[0m21:40:58.703710 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_analytics.fct_orders"
+[0m21:40:58.703921 [debug] [Thread-1 (]: SQL status: OK in 0.055 seconds
+[0m21:40:58.705595 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:40:58.705851 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_customers"} */
+alter view "ecommerce"."main"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m21:40:58.706296 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:40:58.706508 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:40:58.706695 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: BEGIN
+[0m21:40:58.706873 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.707037 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: BEGIN
+[0m21:40:58.707197 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:40:58.707912 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: COMMIT
+[0m21:40:58.708075 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:40:58.708332 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:40:58.708545 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.708700 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: COMMIT
+[0m21:40:58.708861 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:40:58.709007 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.709209 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."fct_orders__dbt_tmp"
+  
+    as (
+      with orders as (
+    select * from "ecommerce"."main"."stg_orders"
+),
+order_items as (
+    select * from "ecommerce"."main"."stg_order_items"
+),
+products as (
+    select * from "ecommerce"."main"."stg_products"
+)
+
+select
+    oi.item_id,
+    o.order_id,
+    o.customer_id,
+    o.order_date,
+    o.status,
+    oi.product_id,
+    p.product_name,
+    p.category as product_category,
+    oi.quantity,
+    oi.price as unit_price,
+    (oi.quantity * oi.price) as item_revenue
+from order_items oi
+join orders o on oi.order_id = o.order_id
+join products p on oi.product_id = p.product_id
+    );
+  
+  
+[0m21:40:58.709384 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:40:58.709622 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.709789 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_daily_sales"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."fct_daily_sales__dbt_tmp"
+  
+    as (
+      with orders as (
+    select * from "ecommerce"."main"."stg_orders"
+    where status = 'completed'
+)
+
+select
+    cast(order_date as date) as sales_date,
+    count(distinct order_id) as total_orders,
+    round(sum(total_amount), 2) as daily_revenue,
+    round(avg(total_amount), 2) as average_order_value
+from orders
+group by 1
+order by 1
+    );
+  
+  
+[0m21:40:58.711133 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:40:58.711414 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_customers"} */
+
+      drop view if exists "ecommerce"."main"."stg_customers__dbt_backup" cascade
+    
+[0m21:40:58.711719 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.712393 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: Close
+[0m21:40:58.712700 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ba9160>]}
+[0m21:40:58.713031 [info ] [Thread-1 (]: 1 of 9 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.10s]
+[0m21:40:58.713280 [debug] [Thread-1 (]: Finished running node model.ecommerce_analytics.stg_customers
+[0m21:40:58.729531 [debug] [Thread-4 (]: SQL status: OK in 0.043 seconds
+[0m21:40:58.730931 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:40:58.731100 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_web_events"} */
+alter view "ecommerce"."main"."stg_web_events__dbt_tmp" rename to "stg_web_events"
+[0m21:40:58.731413 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.732011 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: COMMIT
+[0m21:40:58.732159 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:40:58.732295 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: COMMIT
+[0m21:40:58.732788 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.734004 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:40:58.734182 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_web_events"} */
+
+      drop view if exists "ecommerce"."main"."stg_web_events__dbt_backup" cascade
+    
+[0m21:40:58.734532 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.735242 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: Close
+[0m21:40:58.735525 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111769550>]}
+[0m21:40:58.735858 [info ] [Thread-4 (]: 5 of 9 OK created sql view model main.stg_web_events ........................... [[32mOK[0m in 0.06s]
+[0m21:40:58.736233 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.stg_web_events
+[0m21:40:58.736603 [debug] [Thread-1 (]: Began running node model.ecommerce_analytics.dim_customers
+[0m21:40:58.736773 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.fct_funnel_analysis
+[0m21:40:58.736992 [info ] [Thread-1 (]: 8 of 9 START sql table model main.dim_customers ................................ [RUN]
+[0m21:40:58.737356 [info ] [Thread-4 (]: 9 of 9 START sql table model main.fct_funnel_analysis .......................... [RUN]
+[0m21:40:58.737913 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_customers, now model.ecommerce_analytics.dim_customers)
+[0m21:40:58.738396 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_web_events, now model.ecommerce_analytics.fct_funnel_analysis)
+[0m21:40:58.738653 [debug] [Thread-1 (]: Began compiling node model.ecommerce_analytics.dim_customers
+[0m21:40:58.738859 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.fct_funnel_analysis
+[0m21:40:58.742571 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_analytics.dim_customers"
+[0m21:40:58.742816 [debug] [Thread-2 (]: SQL status: OK in 0.031 seconds
+[0m21:40:58.744059 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:40:58.745620 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:40:58.745965 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_daily_sales"} */
+alter table "ecommerce"."main"."fct_daily_sales__dbt_tmp" rename to "fct_daily_sales"
+[0m21:40:58.746315 [debug] [Thread-1 (]: Began executing node model.ecommerce_analytics.dim_customers
+[0m21:40:58.746563 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.748517 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_analytics.dim_customers"
+[0m21:40:58.751080 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: COMMIT
+[0m21:40:58.751405 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:40:58.751617 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.fct_funnel_analysis
+[0m21:40:58.751807 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: COMMIT
+[0m21:40:58.753521 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:40:58.753945 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:40:58.754201 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: BEGIN
+[0m21:40:58.754428 [debug] [Thread-3 (]: SQL status: OK in 0.045 seconds
+[0m21:40:58.754617 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:40:58.754810 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.755030 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:40:58.756462 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:40:58.757554 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:40:58.757718 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_funnel_analysis: BEGIN
+[0m21:40:58.757872 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */
+alter table "ecommerce"."main"."fct_orders__dbt_tmp" rename to "fct_orders"
+[0m21:40:58.758030 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m21:40:58.758196 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_daily_sales"} */
+
+      drop table if exists "ecommerce"."main"."fct_daily_sales__dbt_backup" cascade
+    
+[0m21:40:58.758382 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:40:58.758582 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:40:58.758755 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.758960 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.759179 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.dim_customers"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."dim_customers__dbt_tmp"
+  
+    as (
+      with customers as (
+    select * from "ecommerce"."main"."stg_customers"
+),
+orders as (
+    select * from "ecommerce"."main"."stg_orders"
+    where status = 'completed'
+),
+web_events as (
+    select * from "ecommerce"."main"."stg_web_events"
+),
+customer_orders as (
+    select
+        customer_id,
+        count(distinct order_id) as total_orders,
+        sum(total_amount) as total_spend,
+        min(order_date) as first_order_date,
+        max(order_date) as last_order_date
+    from orders
+    group by 1
+),
+customer_web as (
+    select
+        customer_id,
+        count(distinct session_id) as total_sessions,
+        count(case when event_type = 'view_item' then 1 end) as total_page_views,
+        count(case when event_type = 'add_to_cart' then 1 end) as total_cart_additions
+    from web_events
+    group by 1
+),
+max_dataset_date as (
+    select max(order_date) as max_date from orders
+)
+
+select
+    c.customer_id,
+    c.join_date,
+    c.age,
+    c.gender,
+    c.country,
+    c.acquisition_channel,
+    coalesce(co.total_orders, 0) as total_orders,
+    coalesce(co.total_spend, 0.0) as total_spend,
+    case 
+        when coalesce(co.total_orders, 0) > 0 then round(co.total_spend / co.total_orders, 2)
+        else 0.0 
+    end as average_order_value,
+    co.first_order_date,
+    co.last_order_date,
+    coalesce(
+        date_diff('day', co.last_order_date, (select max_date from max_dataset_date)), 
+        date_diff('day', cast(c.join_date as timestamp), (select max_date from max_dataset_date))
+    ) as recency_days,
+    coalesce(cw.total_sessions, 0) as total_sessions,
+    coalesce(cw.total_page_views, 0) as total_page_views,
+    coalesce(cw.total_cart_additions, 0) as total_cart_additions,
+    case 
+        when coalesce(date_diff('day', co.last_order_date, (select max_date from max_dataset_date)), 999) > 45 then 1 
+        else 0 
+    end as is_churned
+from customers c
+left join customer_orders co on c.customer_id = co.customer_id
+left join customer_web cw on c.customer_id = cw.customer_id
+    );
+  
+  
+[0m21:40:58.759418 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.760108 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: COMMIT
+[0m21:40:58.760708 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: Close
+[0m21:40:58.761096 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:40:58.761266 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:40:58.761468 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_funnel_analysis: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_funnel_analysis"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."fct_funnel_analysis__dbt_tmp"
+  
+    as (
+      with events as (
+    select * from "ecommerce"."main"."stg_web_events"
+)
+
+select
+    count(case when event_type = 'view_item' then 1 end) as total_views,
+    count(case when event_type = 'add_to_cart' then 1 end) as total_cart_additions,
+    count(case when event_type = 'purchase' then 1 end) as total_purchases
+from events
+    );
+  
+  
+[0m21:40:58.761738 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b77890>]}
+[0m21:40:58.761907 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: COMMIT
+[0m21:40:58.762337 [info ] [Thread-2 (]: 6 of 9 OK created sql table model main.fct_daily_sales ......................... [[32mOK[0m in 0.07s]
+[0m21:40:58.762852 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.fct_daily_sales
+[0m21:40:58.764335 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:40:58.765741 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:40:58.765907 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */
+
+      drop table if exists "ecommerce"."main"."fct_orders__dbt_backup" cascade
+    
+[0m21:40:58.766209 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.766848 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: Close
+[0m21:40:58.767098 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b77ef0>]}
+[0m21:40:58.767366 [info ] [Thread-3 (]: 7 of 9 OK created sql table model main.fct_orders .............................. [[32mOK[0m in 0.08s]
+[0m21:40:58.767596 [debug] [Thread-3 (]: Finished running node model.ecommerce_analytics.fct_orders
+[0m21:40:58.812954 [debug] [Thread-4 (]: SQL status: OK in 0.051 seconds
+[0m21:40:58.814448 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:40:58.814615 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_funnel_analysis: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_funnel_analysis"} */
+alter table "ecommerce"."main"."fct_funnel_analysis__dbt_tmp" rename to "fct_funnel_analysis"
+[0m21:40:58.814954 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.815596 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_funnel_analysis: COMMIT
+[0m21:40:58.815745 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:40:58.815876 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_funnel_analysis: COMMIT
+[0m21:40:58.816443 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.817659 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:40:58.817843 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_funnel_analysis: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_funnel_analysis"} */
+
+      drop table if exists "ecommerce"."main"."fct_funnel_analysis__dbt_backup" cascade
+    
+[0m21:40:58.818191 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.818864 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_funnel_analysis: Close
+[0m21:40:58.819153 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b751f0>]}
+[0m21:40:58.819471 [info ] [Thread-4 (]: 9 of 9 OK created sql table model main.fct_funnel_analysis ..................... [[32mOK[0m in 0.08s]
+[0m21:40:58.819815 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.fct_funnel_analysis
+[0m21:40:58.888551 [debug] [Thread-1 (]: SQL status: OK in 0.128 seconds
+[0m21:40:58.890447 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:40:58.890620 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.dim_customers"} */
+alter table "ecommerce"."main"."dim_customers__dbt_tmp" rename to "dim_customers"
+[0m21:40:58.890968 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.891614 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: COMMIT
+[0m21:40:58.891761 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:40:58.891892 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: COMMIT
+[0m21:40:58.892949 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:40:58.894132 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:40:58.894311 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.dim_customers"} */
+
+      drop table if exists "ecommerce"."main"."dim_customers__dbt_backup" cascade
+    
+[0m21:40:58.894638 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:40:58.895321 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: Close
+[0m21:40:58.895612 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17721f43-9192-4a14-82b2-d07f67c9d8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b77b90>]}
+[0m21:40:58.895999 [info ] [Thread-1 (]: 8 of 9 OK created sql table model main.dim_customers ........................... [[32mOK[0m in 0.16s]
+[0m21:40:58.896266 [debug] [Thread-1 (]: Finished running node model.ecommerce_analytics.dim_customers
+[0m21:40:58.897240 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:40:58.897387 [debug] [MainThread]: On master: BEGIN
+[0m21:40:58.897505 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:40:58.897855 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:40:58.897973 [debug] [MainThread]: On master: COMMIT
+[0m21:40:58.898085 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:40:58.898192 [debug] [MainThread]: On master: COMMIT
+[0m21:40:58.898465 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:40:58.898716 [debug] [MainThread]: On master: Close
+[0m21:40:58.898930 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:40:58.899050 [debug] [MainThread]: Connection 'model.ecommerce_analytics.dim_customers' was properly closed.
+[0m21:40:58.899153 [debug] [MainThread]: Connection 'model.ecommerce_analytics.fct_funnel_analysis' was properly closed.
+[0m21:40:58.899256 [debug] [MainThread]: Connection 'model.ecommerce_analytics.fct_orders' was properly closed.
+[0m21:40:58.899356 [debug] [MainThread]: Connection 'model.ecommerce_analytics.fct_daily_sales' was properly closed.
+[0m21:40:58.899540 [info ] [MainThread]: 
+[0m21:40:58.899688 [info ] [MainThread]: Finished running 4 table models, 5 view models in 0 hours 0 minutes and 0.35 seconds (0.35s).
+[0m21:40:58.900432 [debug] [MainThread]: Command end result
+[0m21:40:58.916853 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/manifest.json
+[0m21:40:58.917806 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/semantic_manifest.json
+[0m21:40:58.920683 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/run_results.json
+[0m21:40:58.920834 [info ] [MainThread]: 
+[0m21:40:58.921103 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:40:58.921283 [info ] [MainThread]: 
+[0m21:40:58.921439 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+[0m21:40:58.932515 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.9549255, "process_in_blocks": "0", "process_kernel_time": 0.245283, "process_mem_max_rss": "235896832", "process_out_blocks": "0", "process_user_time": 2.294914}
+[0m21:40:58.932859 [debug] [MainThread]: Command `dbt run` succeeded at 21:40:58.932803 after 1.96 seconds
+[0m21:40:58.933061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111305610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11381bb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11381b830>]}
+[0m21:40:58.933250 [debug] [MainThread]: Flushing usage events
+[0m21:41:00.191326 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:41:01.251181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071e1be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087a3750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087a34d0>]}
+
+
+============================== 21:41:01.253919 | be6644e5-d3ca-4a7b-8abc-e1ac528c0791 ==============================
+[0m21:41:01.253919 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:41:01.254513 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '.', 'target_path': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt test --profiles-dir .', 'warn_error': 'None', 'static_parser': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'printer_width': '80', 'log_path': '/Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/logs', 'cache_selected_only': 'False', 'write_json': 'True', 'no_print': 'None', 'version_check': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'fail_fast': 'False', 'introspect': 'True'}
+[0m21:41:01.375387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'be6644e5-d3ca-4a7b-8abc-e1ac528c0791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077d1350>]}
+[0m21:41:01.407071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'be6644e5-d3ca-4a7b-8abc-e1ac528c0791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10887abe0>]}
+[0m21:41:01.408276 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m21:41:01.456695 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:41:01.518721 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:41:01.518961 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m21:41:01.519086 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:41:01.544041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'be6644e5-d3ca-4a7b-8abc-e1ac528c0791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109261550>]}
+[0m21:41:01.640414 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/manifest.json
+[0m21:41:01.641625 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/semantic_manifest.json
+[0m21:41:01.652296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'be6644e5-d3ca-4a7b-8abc-e1ac528c0791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093c3c50>]}
+[0m21:41:01.652558 [info ] [MainThread]: Found 9 models, 10 data tests, 5 sources, 485 macros
+[0m21:41:01.652708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be6644e5-d3ca-4a7b-8abc-e1ac528c0791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b7d550>]}
+[0m21:41:01.653842 [info ] [MainThread]: 
+[0m21:41:01.653990 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:41:01.654101 [info ] [MainThread]: 
+[0m21:41:01.654329 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:41:01.657083 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecommerce_main'
+[0m21:41:01.678621 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m21:41:01.678806 [debug] [ThreadPool]: On list_ecommerce_main: BEGIN
+[0m21:41:01.678930 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:41:01.687338 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m21:41:01.687638 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m21:41:01.687809 [debug] [ThreadPool]: On list_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ecommerce_main"} */
+select
+      'ecommerce' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'ecommerce'
+  
+[0m21:41:01.690021 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m21:41:01.690910 [debug] [ThreadPool]: On list_ecommerce_main: ROLLBACK
+[0m21:41:01.691473 [debug] [ThreadPool]: Failed to rollback 'list_ecommerce_main'
+[0m21:41:01.691617 [debug] [ThreadPool]: On list_ecommerce_main: Close
+[0m21:41:01.692491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be6644e5-d3ca-4a7b-8abc-e1ac528c0791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109696dd0>]}
+[0m21:41:01.692707 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:41:01.692826 [debug] [MainThread]: On master: BEGIN
+[0m21:41:01.692933 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:41:01.693238 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:41:01.693366 [debug] [MainThread]: On master: COMMIT
+[0m21:41:01.693476 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:41:01.693583 [debug] [MainThread]: On master: COMMIT
+[0m21:41:01.693753 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:41:01.693864 [debug] [MainThread]: On master: Close
+[0m21:41:01.695190 [debug] [Thread-2 (]: Began running node test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40
+[0m21:41:01.695605 [debug] [Thread-3 (]: Began running node test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f
+[0m21:41:01.695848 [debug] [Thread-1 (]: Began running node test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb
+[0m21:41:01.695412 [info ] [Thread-2 (]: 2 of 10 START test source_not_null_raw_order_items_item_id ..................... [RUN]
+[0m21:41:01.696061 [debug] [Thread-4 (]: Began running node test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae
+[0m21:41:01.696237 [info ] [Thread-3 (]: 3 of 10 START test source_not_null_raw_orders_order_id ......................... [RUN]
+[0m21:41:01.696437 [info ] [Thread-1 (]: 1 of 10 START test source_not_null_raw_customers_customer_id ................... [RUN]
+[0m21:41:01.696726 [debug] [Thread-2 (]: Acquiring new duckdb connection 'test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40'
+[0m21:41:01.696925 [info ] [Thread-4 (]: 4 of 10 START test source_not_null_raw_products_product_id ..................... [RUN]
+[0m21:41:01.697186 [debug] [Thread-3 (]: Acquiring new duckdb connection 'test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f'
+[0m21:41:01.697393 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ecommerce_main, now test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb)
+[0m21:41:01.697581 [debug] [Thread-2 (]: Began compiling node test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40
+[0m21:41:01.697810 [debug] [Thread-4 (]: Acquiring new duckdb connection 'test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae'
+[0m21:41:01.697972 [debug] [Thread-3 (]: Began compiling node test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f
+[0m21:41:01.698144 [debug] [Thread-1 (]: Began compiling node test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb
+[0m21:41:01.704136 [debug] [Thread-4 (]: Began compiling node test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae
+[0m21:41:01.706965 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40"
+[0m21:41:01.708745 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f"
+[0m21:41:01.710616 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb"
+[0m21:41:01.712251 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae"
+[0m21:41:01.712966 [debug] [Thread-2 (]: Began executing node test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40
+[0m21:41:01.719353 [debug] [Thread-4 (]: Began executing node test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae
+[0m21:41:01.722649 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40"
+[0m21:41:01.723901 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae"
+[0m21:41:01.724198 [debug] [Thread-3 (]: Began executing node test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f
+[0m21:41:01.724422 [debug] [Thread-1 (]: Began executing node test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb
+[0m21:41:01.725510 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f"
+[0m21:41:01.726714 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb"
+[0m21:41:01.727068 [debug] [Thread-4 (]: Using duckdb connection "test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae"
+[0m21:41:01.727299 [debug] [Thread-2 (]: Using duckdb connection "test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40"
+[0m21:41:01.727476 [debug] [Thread-4 (]: On test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae: BEGIN
+[0m21:41:01.727648 [debug] [Thread-2 (]: On test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40: BEGIN
+[0m21:41:01.727844 [debug] [Thread-3 (]: Using duckdb connection "test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f"
+[0m21:41:01.727991 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:41:01.728155 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb"
+[0m21:41:01.728302 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:41:01.728460 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f: BEGIN
+[0m21:41:01.728749 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb: BEGIN
+[0m21:41:01.728985 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:41:01.729145 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:41:01.729305 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:01.729454 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:41:01.729622 [debug] [Thread-4 (]: Using duckdb connection "test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae"
+[0m21:41:01.729941 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m21:41:01.730098 [debug] [Thread-2 (]: Using duckdb connection "test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40"
+[0m21:41:01.730270 [debug] [Thread-4 (]: On test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from read_csv_auto('../data/raw_products.csv')
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:41:01.730418 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:41:01.730566 [debug] [Thread-3 (]: Using duckdb connection "test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f"
+[0m21:41:01.730723 [debug] [Thread-2 (]: On test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select item_id
+from read_csv_auto('../data/raw_order_items.csv')
+where item_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:41:01.730952 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb"
+[0m21:41:01.731134 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from read_csv_auto('../data/raw_orders.csv')
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:41:01.731385 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from read_csv_auto('../data/raw_customers.csv')
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:41:01.733629 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m21:41:01.736099 [debug] [Thread-4 (]: On test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae: ROLLBACK
+[0m21:41:01.736482 [debug] [Thread-4 (]: Failed to rollback 'test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae'
+[0m21:41:01.736665 [debug] [Thread-4 (]: On test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae: Close
+[0m21:41:01.736978 [info ] [Thread-4 (]: 4 of 10 PASS source_not_null_raw_products_product_id ........................... [[32mPASS[0m in 0.04s]
+[0m21:41:01.737287 [debug] [Thread-4 (]: Finished running node test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae
+[0m21:41:01.737568 [debug] [Thread-4 (]: Began running node test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea
+[0m21:41:01.737822 [info ] [Thread-4 (]: 5 of 10 START test source_not_null_raw_web_events_event_id ..................... [RUN]
+[0m21:41:01.738075 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.ecommerce_analytics.source_not_null_raw_products_product_id.b984a33cae, now test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea)
+[0m21:41:01.738248 [debug] [Thread-4 (]: Began compiling node test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea
+[0m21:41:01.740258 [debug] [Thread-4 (]: Writing injected SQL for node "test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea"
+[0m21:41:01.740644 [debug] [Thread-4 (]: Began executing node test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea
+[0m21:41:01.743716 [debug] [Thread-4 (]: Writing runtime sql for node "test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea"
+[0m21:41:01.744240 [debug] [Thread-4 (]: Using duckdb connection "test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea"
+[0m21:41:01.744483 [debug] [Thread-4 (]: On test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea: BEGIN
+[0m21:41:01.744693 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:41:01.744873 [debug] [Thread-2 (]: SQL status: OK in 0.014 seconds
+[0m21:41:01.745967 [debug] [Thread-2 (]: On test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40: ROLLBACK
+[0m21:41:01.746229 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:41:01.746559 [debug] [Thread-2 (]: Failed to rollback 'test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40'
+[0m21:41:01.746733 [debug] [Thread-4 (]: Using duckdb connection "test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea"
+[0m21:41:01.746895 [debug] [Thread-2 (]: On test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40: Close
+[0m21:41:01.747066 [debug] [Thread-4 (]: On test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_id
+from read_csv_auto('../data/raw_web_events.csv')
+where event_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:41:01.747450 [info ] [Thread-2 (]: 2 of 10 PASS source_not_null_raw_order_items_item_id ........................... [[32mPASS[0m in 0.05s]
+[0m21:41:01.747710 [debug] [Thread-2 (]: Finished running node test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40
+[0m21:41:01.747885 [debug] [Thread-2 (]: Began running node test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017
+[0m21:41:01.748084 [info ] [Thread-2 (]: 6 of 10 START test source_unique_raw_customers_customer_id ..................... [RUN]
+[0m21:41:01.748281 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.ecommerce_analytics.source_not_null_raw_order_items_item_id.9528944c40, now test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017)
+[0m21:41:01.748437 [debug] [Thread-2 (]: Began compiling node test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017
+[0m21:41:01.751564 [debug] [Thread-2 (]: Writing injected SQL for node "test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017"
+[0m21:41:01.751965 [debug] [Thread-2 (]: Began executing node test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017
+[0m21:41:01.753286 [debug] [Thread-2 (]: Writing runtime sql for node "test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017"
+[0m21:41:01.753634 [debug] [Thread-2 (]: Using duckdb connection "test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017"
+[0m21:41:01.753794 [debug] [Thread-2 (]: On test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017: BEGIN
+[0m21:41:01.753934 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:41:01.754329 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:41:01.754478 [debug] [Thread-2 (]: Using duckdb connection "test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017"
+[0m21:41:01.754631 [debug] [Thread-2 (]: On test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from read_csv_auto('../data/raw_customers.csv')
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:41:01.756321 [debug] [Thread-3 (]: SQL status: OK in 0.025 seconds
+[0m21:41:01.757227 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f: ROLLBACK
+[0m21:41:01.757569 [debug] [Thread-3 (]: Failed to rollback 'test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f'
+[0m21:41:01.757727 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f: Close
+[0m21:41:01.757996 [info ] [Thread-3 (]: 3 of 10 PASS source_not_null_raw_orders_order_id ............................... [[32mPASS[0m in 0.06s]
+[0m21:41:01.758241 [debug] [Thread-3 (]: Finished running node test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f
+[0m21:41:01.758412 [debug] [Thread-3 (]: Began running node test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf
+[0m21:41:01.758610 [info ] [Thread-3 (]: 7 of 10 START test source_unique_raw_order_items_item_id ....................... [RUN]
+[0m21:41:01.758835 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.ecommerce_analytics.source_not_null_raw_orders_order_id.03a065a98f, now test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf)
+[0m21:41:01.759006 [debug] [Thread-3 (]: Began compiling node test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf
+[0m21:41:01.760927 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf"
+[0m21:41:01.761303 [debug] [Thread-3 (]: Began executing node test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf
+[0m21:41:01.762285 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf"
+[0m21:41:01.762783 [debug] [Thread-3 (]: Using duckdb connection "test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf"
+[0m21:41:01.762956 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf: BEGIN
+[0m21:41:01.763101 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:41:01.763429 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:41:01.763576 [debug] [Thread-3 (]: Using duckdb connection "test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf"
+[0m21:41:01.763733 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    item_id as unique_field,
+    count(*) as n_records
+
+from read_csv_auto('../data/raw_order_items.csv')
+where item_id is not null
+group by item_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:41:01.777125 [debug] [Thread-3 (]: SQL status: OK in 0.013 seconds
+[0m21:41:01.778369 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf: ROLLBACK
+[0m21:41:01.778777 [debug] [Thread-3 (]: Failed to rollback 'test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf'
+[0m21:41:01.778948 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf: Close
+[0m21:41:01.779307 [info ] [Thread-3 (]: 7 of 10 PASS source_unique_raw_order_items_item_id ............................. [[32mPASS[0m in 0.02s]
+[0m21:41:01.779549 [debug] [Thread-3 (]: Finished running node test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf
+[0m21:41:01.779715 [debug] [Thread-3 (]: Began running node test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f
+[0m21:41:01.779864 [info ] [Thread-3 (]: 8 of 10 START test source_unique_raw_orders_order_id ........................... [RUN]
+[0m21:41:01.780078 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.ecommerce_analytics.source_unique_raw_order_items_item_id.a13b699bbf, now test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f)
+[0m21:41:01.780227 [debug] [Thread-3 (]: Began compiling node test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f
+[0m21:41:01.782522 [debug] [Thread-3 (]: Writing injected SQL for node "test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f"
+[0m21:41:01.782802 [debug] [Thread-1 (]: SQL status: OK in 0.051 seconds
+[0m21:41:01.783126 [debug] [Thread-3 (]: Began executing node test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f
+[0m21:41:01.784116 [debug] [Thread-3 (]: Writing runtime sql for node "test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f"
+[0m21:41:01.784809 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb: ROLLBACK
+[0m21:41:01.785114 [debug] [Thread-1 (]: Failed to rollback 'test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb'
+[0m21:41:01.785270 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb: Close
+[0m21:41:01.785530 [info ] [Thread-1 (]: 1 of 10 PASS source_not_null_raw_customers_customer_id ......................... [[32mPASS[0m in 0.09s]
+[0m21:41:01.785769 [debug] [Thread-1 (]: Finished running node test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb
+[0m21:41:01.785936 [debug] [Thread-1 (]: Began running node test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba
+[0m21:41:01.786186 [info ] [Thread-1 (]: 9 of 10 START test source_unique_raw_products_product_id ....................... [RUN]
+[0m21:41:01.786498 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ecommerce_analytics.source_not_null_raw_customers_customer_id.e869432dbb, now test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba)
+[0m21:41:01.786725 [debug] [Thread-1 (]: Began compiling node test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba
+[0m21:41:01.786991 [debug] [Thread-3 (]: Using duckdb connection "test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f"
+[0m21:41:01.789496 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba"
+[0m21:41:01.789777 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f: BEGIN
+[0m21:41:01.790090 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:41:01.790599 [debug] [Thread-1 (]: Began executing node test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba
+[0m21:41:01.791816 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba"
+[0m21:41:01.792074 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:41:01.792277 [debug] [Thread-3 (]: Using duckdb connection "test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f"
+[0m21:41:01.792504 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from read_csv_auto('../data/raw_orders.csv')
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:41:01.792812 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba"
+[0m21:41:01.792975 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba: BEGIN
+[0m21:41:01.793121 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:01.793513 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:41:01.793761 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba"
+[0m21:41:01.793946 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from read_csv_auto('../data/raw_products.csv')
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:41:01.796731 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m21:41:01.797734 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba: ROLLBACK
+[0m21:41:01.798091 [debug] [Thread-1 (]: Failed to rollback 'test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba'
+[0m21:41:01.798253 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba: Close
+[0m21:41:01.798423 [debug] [Thread-4 (]: SQL status: OK in 0.051 seconds
+[0m21:41:01.798693 [info ] [Thread-1 (]: 9 of 10 PASS source_unique_raw_products_product_id ............................. [[32mPASS[0m in 0.01s]
+[0m21:41:01.799019 [debug] [Thread-1 (]: Finished running node test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba
+[0m21:41:01.799677 [debug] [Thread-4 (]: On test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea: ROLLBACK
+[0m21:41:01.799852 [debug] [Thread-1 (]: Began running node test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a
+[0m21:41:01.800272 [debug] [Thread-4 (]: Failed to rollback 'test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea'
+[0m21:41:01.800067 [info ] [Thread-1 (]: 10 of 10 START test source_unique_raw_web_events_event_id ...................... [RUN]
+[0m21:41:01.800463 [debug] [Thread-4 (]: On test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea: Close
+[0m21:41:01.800634 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ecommerce_analytics.source_unique_raw_products_product_id.518dac90ba, now test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a)
+[0m21:41:01.800813 [debug] [Thread-1 (]: Began compiling node test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a
+[0m21:41:01.801024 [info ] [Thread-4 (]: 5 of 10 PASS source_not_null_raw_web_events_event_id ........................... [[32mPASS[0m in 0.06s]
+[0m21:41:01.803120 [debug] [Thread-1 (]: Writing injected SQL for node "test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a"
+[0m21:41:01.803430 [debug] [Thread-4 (]: Finished running node test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea
+[0m21:41:01.803852 [debug] [Thread-1 (]: Began executing node test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a
+[0m21:41:01.805338 [debug] [Thread-1 (]: Writing runtime sql for node "test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a"
+[0m21:41:01.805832 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a"
+[0m21:41:01.806009 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a: BEGIN
+[0m21:41:01.806210 [debug] [Thread-2 (]: SQL status: OK in 0.051 seconds
+[0m21:41:01.806423 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:41:01.807456 [debug] [Thread-2 (]: On test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017: ROLLBACK
+[0m21:41:01.807720 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:41:01.808000 [debug] [Thread-2 (]: Failed to rollback 'test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017'
+[0m21:41:01.808172 [debug] [Thread-1 (]: Using duckdb connection "test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a"
+[0m21:41:01.808357 [debug] [Thread-2 (]: On test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017: Close
+[0m21:41:01.808598 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    event_id as unique_field,
+    count(*) as n_records
+
+from read_csv_auto('../data/raw_web_events.csv')
+where event_id is not null
+group by event_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:41:01.808976 [info ] [Thread-2 (]: 6 of 10 PASS source_unique_raw_customers_customer_id ........................... [[32mPASS[0m in 0.06s]
+[0m21:41:01.809337 [debug] [Thread-2 (]: Finished running node test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017
+[0m21:41:01.817176 [debug] [Thread-3 (]: SQL status: OK in 0.024 seconds
+[0m21:41:01.818140 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f: ROLLBACK
+[0m21:41:01.818472 [debug] [Thread-3 (]: Failed to rollback 'test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f'
+[0m21:41:01.818624 [debug] [Thread-3 (]: On test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f: Close
+[0m21:41:01.818906 [info ] [Thread-3 (]: 8 of 10 PASS source_unique_raw_orders_order_id ................................. [[32mPASS[0m in 0.04s]
+[0m21:41:01.819154 [debug] [Thread-3 (]: Finished running node test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f
+[0m21:41:01.860298 [debug] [Thread-1 (]: SQL status: OK in 0.051 seconds
+[0m21:41:01.861488 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a: ROLLBACK
+[0m21:41:01.861829 [debug] [Thread-1 (]: Failed to rollback 'test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a'
+[0m21:41:01.861981 [debug] [Thread-1 (]: On test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a: Close
+[0m21:41:01.862266 [info ] [Thread-1 (]: 10 of 10 PASS source_unique_raw_web_events_event_id ............................ [[32mPASS[0m in 0.06s]
+[0m21:41:01.862499 [debug] [Thread-1 (]: Finished running node test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a
+[0m21:41:01.863423 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:41:01.863650 [debug] [MainThread]: On master: BEGIN
+[0m21:41:01.863770 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:41:01.864137 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:41:01.864268 [debug] [MainThread]: On master: COMMIT
+[0m21:41:01.864382 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:41:01.864485 [debug] [MainThread]: On master: COMMIT
+[0m21:41:01.864660 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:41:01.864773 [debug] [MainThread]: On master: Close
+[0m21:41:01.864926 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:41:01.865036 [debug] [MainThread]: Connection 'test.ecommerce_analytics.source_unique_raw_web_events_event_id.186c8c697a' was properly closed.
+[0m21:41:01.865136 [debug] [MainThread]: Connection 'test.ecommerce_analytics.source_unique_raw_customers_customer_id.3579d23017' was properly closed.
+[0m21:41:01.865236 [debug] [MainThread]: Connection 'test.ecommerce_analytics.source_unique_raw_orders_order_id.2e0765462f' was properly closed.
+[0m21:41:01.865331 [debug] [MainThread]: Connection 'test.ecommerce_analytics.source_not_null_raw_web_events_event_id.02df3afdea' was properly closed.
+[0m21:41:01.865464 [info ] [MainThread]: 
+[0m21:41:01.865595 [info ] [MainThread]: Finished running 10 data tests in 0 hours 0 minutes and 0.21 seconds (0.21s).
+[0m21:41:01.866382 [debug] [MainThread]: Command end result
+[0m21:41:01.882435 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/manifest.json
+[0m21:41:01.883610 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/semantic_manifest.json
+[0m21:41:01.887340 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/run_results.json
+[0m21:41:01.887521 [info ] [MainThread]: 
+[0m21:41:01.887728 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:41:01.887904 [info ] [MainThread]: 
+[0m21:41:01.888062 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=10
+[0m21:41:01.888771 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.6767822, "process_in_blocks": "0", "process_kernel_time": 0.16764, "process_mem_max_rss": "196886528", "process_out_blocks": "0", "process_user_time": 1.491502}
+[0m21:41:01.888993 [debug] [MainThread]: Command `dbt test` succeeded at 21:41:01.888952 after 0.68 seconds
+[0m21:41:01.889168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108870650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109526db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109525d30>]}
+[0m21:41:01.889333 [debug] [MainThread]: Flushing usage events
+[0m21:41:02.830622 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:45:58.823859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107abdbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c3f750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c3f4d0>]}
+
+
+============================== 21:45:58.828419 | 4d6a6e2a-52cc-4845-b409-f5ac659855d2 ==============================
+[0m21:45:58.828419 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:45:58.828824 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'profiles_dir': '.', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'warn_error': 'None', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'partial_parse': 'True', 'log_cache_events': 'False', 'empty': 'False', 'version_check': 'True', 'debug': 'False', 'write_json': 'True', 'log_format': 'default', 'quiet': 'False', 'log_path': '/Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/logs', 'use_experimental_parser': 'False'}
+[0m21:45:58.956577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4d6a6e2a-52cc-4845-b409-f5ac659855d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f6d350>]}
+[0m21:45:58.988014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4d6a6e2a-52cc-4845-b409-f5ac659855d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d16be0>]}
+[0m21:45:58.989584 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m21:45:59.045422 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:45:59.103224 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m21:45:59.103549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4d6a6e2a-52cc-4845-b409-f5ac659855d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109202750>]}
+[0m21:45:59.801713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4d6a6e2a-52cc-4845-b409-f5ac659855d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f8ef30>]}
+[0m21:45:59.850864 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/manifest.json
+[0m21:45:59.852312 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/semantic_manifest.json
+[0m21:45:59.860772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4d6a6e2a-52cc-4845-b409-f5ac659855d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095e1630>]}
+[0m21:45:59.861074 [info ] [MainThread]: Found 9 models, 10 data tests, 5 sources, 485 macros
+[0m21:45:59.861240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d6a6e2a-52cc-4845-b409-f5ac659855d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d935f0>]}
+[0m21:45:59.862375 [info ] [MainThread]: 
+[0m21:45:59.862546 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:45:59.862673 [info ] [MainThread]: 
+[0m21:45:59.862911 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:45:59.865738 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecommerce'
+[0m21:45:59.891240 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce"
+[0m21:45:59.891478 [debug] [ThreadPool]: On list_ecommerce: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ecommerce"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ecommerce"'
+    
+  
+  
+[0m21:45:59.891621 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:45:59.897865 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Could not set lock on file "/Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/data/ecommerce.db": Conflicting lock is held in /opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python (PID 13829) by user sachitbatra. However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
+[0m21:45:59.898112 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ecommerce"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ecommerce"'
+    
+  
+  
+[0m21:45:59.898251 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m21:45:59.898374 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:45:59.901754 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Could not set lock on file "/Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/data/ecommerce.db": Conflicting lock is held in /opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python (PID 13829) by user sachitbatra. However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
+[0m21:45:59.901919 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: macro list_schemas
+[0m21:45:59.902040 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m21:45:59.902150 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:45:59.905336 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:45:59.905501 [debug] [MainThread]: Connection 'list_ecommerce' was properly closed.
+[0m21:45:59.905651 [info ] [MainThread]: 
+[0m21:45:59.905795 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.04 seconds (0.04s).
+[0m21:45:59.906079 [error] [MainThread]: Encountered an error:
+IO Error: Could not set lock on file "/Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/data/ecommerce.db": Conflicting lock is held in /opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python (PID 13829) by user sachitbatra. However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
+[0m21:45:59.914110 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/connections.py", line 95, in exception_handler
+    yield
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/sql/connections.py", line 147, in add_query
+    cursor = connection.handle.cursor()
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+                        ~~~~~~~~~~~~~~~^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Could not set lock on file "/Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/data/ecommerce.db": Conflicting lock is held in /opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python (PID 13829) by user sachitbatra. However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/connections.py", line 95, in exception_handler
+    yield
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/base/impl.py", line 1357, in execute_macro
+    result = macro_function(**kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt_common/clients/jinja.py", line 427, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 50, in macro
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 52, in macro
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/base/impl.py", line 508, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/connections.py", line 130, in execute
+    return super().execute(sql, auto_begin, fetch, limit)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/sql/connections.py", line 219, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/sql/connections.py", line 131, in add_query
+    with self.exception_handler(sql):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/connections.py", line 102, in exception_handler
+    self.rollback_if_open()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/base/connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+                            ^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+                        ~~~~~~~~~~~~~~~^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Could not set lock on file "/Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/data/ecommerce.db": Conflicting lock is held in /opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python (PID 13829) by user sachitbatra. However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 391, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 408, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/cli/main.py", line 593, in run
+    results = task.run()
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/task/runnable.py", line 626, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/task/runnable.py", line 559, in execute_with_hooks
+    before_run_status = self.before_run(adapter, selected_uids)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/task/run.py", line 1114, in before_run
+    self.create_schemas(adapter, required_schemas)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/task/runnable.py", line 734, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+                                    ~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt_common/utils/executor.py", line 16, in connected
+    return func(*args, **kwargs)
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/task/runnable.py", line 709, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/sql/impl.py", line 219, in list_schemas
+    results = self.execute_macro(LIST_SCHEMAS_MACRO_NAME, kwargs={"database": database})
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/base/impl.py", line 1356, in execute_macro
+    with self.connections.exception_handler(f"macro {macro_name}"):
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/connections.py", line 102, in exception_handler
+    self.rollback_if_open()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/base/connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+                            ^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+                        ~~~~~~~~~~~~~~~^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sachitbatra/Desktop/ecommerce/venv/lib/python3.13/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Could not set lock on file "/Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/data/ecommerce.db": Conflicting lock is held in /opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python (PID 13829) by user sachitbatra. However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
+
+[0m21:45:59.916092 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.1411197, "process_in_blocks": "0", "process_kernel_time": 0.202102, "process_mem_max_rss": "156991488", "process_out_blocks": "0", "process_user_time": 1.715006}
+[0m21:45:59.916431 [debug] [MainThread]: Command `dbt run` failed at 21:45:59.916370 after 1.14 seconds
+[0m21:45:59.916649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d0c650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109638cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096390d0>]}
+[0m21:45:59.916835 [debug] [MainThread]: Flushing usage events
+[0m21:46:00.986591 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:46:12.908544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113fe1be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1164a3750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1164a34d0>]}
+
+
+============================== 21:46:12.911444 | 2d02a652-d7e9-4b52-acae-b6ad6df9b152 ==============================
+[0m21:46:12.911444 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:46:12.911789 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'printer_width': '80', 'use_experimental_parser': 'False', 'static_parser': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'use_colors': 'True', 'version_check': 'True', 'fail_fast': 'False', 'introspect': 'True', 'debug': 'False', 'log_path': '/Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/logs', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'write_json': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'no_print': 'None', 'empty': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'profiles_dir': '.'}
+[0m21:46:13.030204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1154d1350>]}
+[0m21:46:13.062111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116576be0>]}
+[0m21:46:13.063319 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m21:46:13.111455 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:46:13.175209 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:46:13.175549 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m21:46:13.175704 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:46:13.200452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116e61550>]}
+[0m21:46:13.292728 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/manifest.json
+[0m21:46:13.294024 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/semantic_manifest.json
+[0m21:46:13.299880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116af3f20>]}
+[0m21:46:13.300181 [info ] [MainThread]: Found 9 models, 10 data tests, 5 sources, 485 macros
+[0m21:46:13.300350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116a65fd0>]}
+[0m21:46:13.301584 [info ] [MainThread]: 
+[0m21:46:13.301749 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:46:13.301874 [info ] [MainThread]: 
+[0m21:46:13.302125 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:46:13.304790 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecommerce'
+[0m21:46:13.326917 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce"
+[0m21:46:13.327175 [debug] [ThreadPool]: On list_ecommerce: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ecommerce"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ecommerce"'
+    
+  
+  
+[0m21:46:13.327314 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:46:13.338112 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m21:46:13.339170 [debug] [ThreadPool]: On list_ecommerce: Close
+[0m21:46:13.339558 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ecommerce, now create_ecommerce_main)
+[0m21:46:13.339800 [debug] [ThreadPool]: Creating schema "database: "ecommerce"
+schema: "main"
+"
+[0m21:46:13.343149 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m21:46:13.343314 [debug] [ThreadPool]: On create_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "create_ecommerce_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='ecommerce'
+        and type='sqlite'
+    
+  
+[0m21:46:13.343440 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:46:13.344286 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:46:13.345018 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m21:46:13.345175 [debug] [ThreadPool]: On create_ecommerce_main: BEGIN
+[0m21:46:13.345392 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:46:13.345509 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m21:46:13.345623 [debug] [ThreadPool]: On create_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "create_ecommerce_main"} */
+
+    
+    
+        create schema if not exists "ecommerce"."main"
+    
+[0m21:46:13.346289 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:46:13.346674 [debug] [ThreadPool]: On create_ecommerce_main: COMMIT
+[0m21:46:13.346802 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m21:46:13.346912 [debug] [ThreadPool]: On create_ecommerce_main: COMMIT
+[0m21:46:13.347114 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:46:13.347234 [debug] [ThreadPool]: On create_ecommerce_main: Close
+[0m21:46:13.348037 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ecommerce_main, now list_ecommerce_main)
+[0m21:46:13.351115 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m21:46:13.351303 [debug] [ThreadPool]: On list_ecommerce_main: BEGIN
+[0m21:46:13.351422 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:46:13.351739 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:46:13.351860 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m21:46:13.351986 [debug] [ThreadPool]: On list_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ecommerce_main"} */
+select
+      'ecommerce' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'ecommerce'
+  
+[0m21:46:13.354635 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m21:46:13.355382 [debug] [ThreadPool]: On list_ecommerce_main: ROLLBACK
+[0m21:46:13.355977 [debug] [ThreadPool]: Failed to rollback 'list_ecommerce_main'
+[0m21:46:13.356120 [debug] [ThreadPool]: On list_ecommerce_main: Close
+[0m21:46:13.356974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1178e3e10>]}
+[0m21:46:13.357193 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:46:13.357311 [debug] [MainThread]: On master: BEGIN
+[0m21:46:13.357422 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:46:13.357723 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:46:13.357844 [debug] [MainThread]: On master: COMMIT
+[0m21:46:13.357959 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:46:13.358066 [debug] [MainThread]: On master: COMMIT
+[0m21:46:13.358238 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:46:13.358357 [debug] [MainThread]: On master: Close
+[0m21:46:13.360054 [debug] [Thread-3 (]: Began running node model.ecommerce_analytics.stg_orders
+[0m21:46:13.360246 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.stg_products
+[0m21:46:13.360407 [debug] [Thread-1 (]: Began running node model.ecommerce_analytics.stg_customers
+[0m21:46:13.360569 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.stg_order_items
+[0m21:46:13.360819 [info ] [Thread-3 (]: 3 of 9 START sql table model main.stg_orders ................................... [RUN]
+[0m21:46:13.361065 [info ] [Thread-4 (]: 4 of 9 START sql table model main.stg_products ................................. [RUN]
+[0m21:46:13.361282 [info ] [Thread-1 (]: 1 of 9 START sql table model main.stg_customers ................................ [RUN]
+[0m21:46:13.361488 [info ] [Thread-2 (]: 2 of 9 START sql table model main.stg_order_items .............................. [RUN]
+[0m21:46:13.361730 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.ecommerce_analytics.stg_orders'
+[0m21:46:13.361941 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.ecommerce_analytics.stg_products'
+[0m21:46:13.362100 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ecommerce_main, now model.ecommerce_analytics.stg_customers)
+[0m21:46:13.362283 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.ecommerce_analytics.stg_order_items'
+[0m21:46:13.362434 [debug] [Thread-3 (]: Began compiling node model.ecommerce_analytics.stg_orders
+[0m21:46:13.362574 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.stg_products
+[0m21:46:13.362709 [debug] [Thread-1 (]: Began compiling node model.ecommerce_analytics.stg_customers
+[0m21:46:13.362843 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.stg_order_items
+[0m21:46:13.366416 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_orders"
+[0m21:46:13.367853 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_products"
+[0m21:46:13.368970 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_customers"
+[0m21:46:13.370154 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_order_items"
+[0m21:46:13.370684 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.stg_products
+[0m21:46:13.370858 [debug] [Thread-3 (]: Began executing node model.ecommerce_analytics.stg_orders
+[0m21:46:13.371011 [debug] [Thread-1 (]: Began executing node model.ecommerce_analytics.stg_customers
+[0m21:46:13.371150 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.stg_order_items
+[0m21:46:13.387751 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_products"
+[0m21:46:13.389471 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_orders"
+[0m21:46:13.390840 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_customers"
+[0m21:46:13.392232 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_order_items"
+[0m21:46:13.392892 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:46:13.393088 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: BEGIN
+[0m21:46:13.393247 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:46:13.393578 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:46:13.393749 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: BEGIN
+[0m21:46:13.393889 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:46:13.394141 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:46:13.394293 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: BEGIN
+[0m21:46:13.394426 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:46:13.394666 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:46:13.394848 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.394996 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: BEGIN
+[0m21:46:13.395145 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.395301 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.395440 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:46:13.395585 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:46:13.395727 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:46:13.395867 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:46:13.396028 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_customers"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."stg_customers__dbt_tmp"
+  
+    as (
+      with source as (
+    select * from read_csv_auto('../data/raw_customers.csv')
+)
+
+select
+    cast(customer_id as varchar) as customer_id,
+    cast(join_date as date) as join_date,
+    cast(age as integer) as age,
+    cast(gender as varchar) as gender,
+    cast(country as varchar) as country,
+    cast(acquisition_channel as varchar) as acquisition_channel
+from source
+    );
+  
+  
+[0m21:46:13.396269 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_order_items"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."stg_order_items__dbt_tmp"
+  
+    as (
+      with source as (
+    select * from read_csv_auto('../data/raw_order_items.csv')
+)
+
+select
+    cast(item_id as varchar) as item_id,
+    cast(order_id as varchar) as order_id,
+    cast(product_id as varchar) as product_id,
+    cast(quantity as integer) as quantity,
+    cast(price as double) as price
+from source
+    );
+  
+  
+[0m21:46:13.396456 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."stg_orders__dbt_tmp"
+  
+    as (
+      with source as (
+    select * from read_csv_auto('../data/raw_orders.csv')
+)
+
+select
+    cast(order_id as varchar) as order_id,
+    cast(customer_id as varchar) as customer_id,
+    cast(order_date as timestamp) as order_date,
+    cast(total_amount as double) as total_amount,
+    cast(status as varchar) as status
+from source
+    );
+  
+  
+[0m21:46:13.396609 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.396975 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:46:13.397139 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_products"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."stg_products__dbt_tmp"
+  
+    as (
+      with source as (
+    select * from read_csv_auto('../data/raw_products.csv')
+)
+
+select
+    cast(product_id as varchar) as product_id,
+    cast(product_name as varchar) as product_name,
+    cast(category as varchar) as category,
+    cast(price as double) as price,
+    cast(stock_quantity as integer) as stock_quantity
+from source
+    );
+  
+  
+[0m21:46:13.405177 [debug] [Thread-4 (]: SQL status: OK in 0.008 seconds
+[0m21:46:13.408334 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:46:13.408597 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_products"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'stg_products'
+  
+[0m21:46:13.409157 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.409840 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:46:13.410019 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_products"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'stg_products'
+  
+[0m21:46:13.410501 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.413691 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:46:13.413893 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_products"} */
+alter view "ecommerce"."main"."stg_products" rename to "stg_products__dbt_backup"
+[0m21:46:13.414491 [debug] [Thread-2 (]: SQL status: OK in 0.018 seconds
+[0m21:46:13.415142 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:46:13.415339 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_order_items"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'stg_order_items'
+  
+[0m21:46:13.415511 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.417215 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:46:13.417390 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_products"} */
+alter table "ecommerce"."main"."stg_products__dbt_tmp" rename to "stg_products"
+[0m21:46:13.417662 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.417931 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.418688 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:46:13.424208 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_order_items"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'stg_order_items'
+  
+[0m21:46:13.428227 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: COMMIT
+[0m21:46:13.428531 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:46:13.428699 [debug] [Thread-3 (]: SQL status: OK in 0.032 seconds
+[0m21:46:13.428864 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: COMMIT
+[0m21:46:13.429028 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.429549 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:46:13.431354 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:46:13.431568 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'stg_orders'
+  
+[0m21:46:13.431788 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_order_items"} */
+alter view "ecommerce"."main"."stg_order_items" rename to "stg_order_items__dbt_backup"
+[0m21:46:13.431950 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.436458 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_products"
+[0m21:46:13.436665 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_products"} */
+
+      drop view if exists "ecommerce"."main"."stg_products__dbt_backup" cascade
+    
+[0m21:46:13.437154 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m21:46:13.437359 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m21:46:13.438840 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:46:13.439075 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.439251 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_order_items"} */
+alter table "ecommerce"."main"."stg_order_items__dbt_tmp" rename to "stg_order_items"
+[0m21:46:13.439901 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:46:13.441152 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_products: Close
+[0m21:46:13.441439 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'stg_orders'
+  
+[0m21:46:13.441674 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.442546 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: COMMIT
+[0m21:46:13.443403 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:46:13.443597 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.443768 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: COMMIT
+[0m21:46:13.445632 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:46:13.445820 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */
+alter view "ecommerce"."main"."stg_orders" rename to "stg_orders__dbt_backup"
+[0m21:46:13.446023 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.447032 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.stg_order_items"
+[0m21:46:13.447197 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_order_items"} */
+
+      drop view if exists "ecommerce"."main"."stg_order_items__dbt_backup" cascade
+    
+[0m21:46:13.447377 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.447545 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116ff7650>]}
+[0m21:46:13.448952 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:46:13.449540 [debug] [Thread-1 (]: SQL status: OK in 0.053 seconds
+[0m21:46:13.449350 [info ] [Thread-4 (]: 4 of 9 OK created sql table model main.stg_products ............................ [[32mOK[0m in 0.08s]
+[0m21:46:13.449756 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.449924 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */
+alter table "ecommerce"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m21:46:13.450466 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:46:13.450723 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.stg_products
+[0m21:46:13.451308 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_order_items: Close
+[0m21:46:13.451543 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_customers"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'stg_customers'
+  
+[0m21:46:13.451743 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.stg_web_events
+[0m21:46:13.451935 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.452258 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117c18890>]}
+[0m21:46:13.452487 [info ] [Thread-4 (]: 5 of 9 START sql table model main.stg_web_events ............................... [RUN]
+[0m21:46:13.452665 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.453441 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: COMMIT
+[0m21:46:13.453865 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_products, now model.ecommerce_analytics.stg_web_events)
+[0m21:46:13.453714 [info ] [Thread-2 (]: 2 of 9 OK created sql table model main.stg_order_items ......................... [[32mOK[0m in 0.09s]
+[0m21:46:13.454086 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:46:13.455056 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:46:13.455203 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.stg_web_events
+[0m21:46:13.455463 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.stg_order_items
+[0m21:46:13.455615 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: COMMIT
+[0m21:46:13.455767 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_customers"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'stg_customers'
+  
+[0m21:46:13.457085 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_web_events"
+[0m21:46:13.457694 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.stg_web_events
+[0m21:46:13.459119 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_web_events"
+[0m21:46:13.459310 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.459490 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.460780 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.stg_orders"
+[0m21:46:13.460954 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */
+
+      drop view if exists "ecommerce"."main"."stg_orders__dbt_backup" cascade
+    
+[0m21:46:13.462316 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:46:13.462550 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:46:13.462726 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_customers"} */
+alter view "ecommerce"."main"."stg_customers" rename to "stg_customers__dbt_backup"
+[0m21:46:13.462881 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.463022 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: BEGIN
+[0m21:46:13.463680 [debug] [Thread-3 (]: On model.ecommerce_analytics.stg_orders: Close
+[0m21:46:13.463848 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:46:13.464016 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.464255 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117ae7890>]}
+[0m21:46:13.465845 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:46:13.466070 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.466599 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_customers"} */
+alter table "ecommerce"."main"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m21:46:13.466411 [info ] [Thread-3 (]: 3 of 9 OK created sql table model main.stg_orders .............................. [[32mOK[0m in 0.10s]
+[0m21:46:13.466840 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:46:13.467131 [debug] [Thread-3 (]: Finished running node model.ecommerce_analytics.stg_orders
+[0m21:46:13.467307 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_web_events"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."stg_web_events__dbt_tmp"
+  
+    as (
+      with source as (
+    select * from read_csv_auto('../data/raw_web_events.csv')
+)
+
+select
+    cast(event_id as varchar) as event_id,
+    cast(customer_id as varchar) as customer_id,
+    cast(session_id as varchar) as session_id,
+    cast(event_timestamp as timestamp) as event_timestamp,
+    cast(event_type as varchar) as event_type,
+    cast(product_id as varchar) as product_id
+from source
+    );
+  
+  
+[0m21:46:13.467471 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.467821 [debug] [Thread-3 (]: Began running node model.ecommerce_analytics.fct_orders
+[0m21:46:13.467979 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.fct_daily_sales
+[0m21:46:13.469240 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: COMMIT
+[0m21:46:13.469538 [info ] [Thread-3 (]: 7 of 9 START sql table model main.fct_orders ................................... [RUN]
+[0m21:46:13.469791 [info ] [Thread-2 (]: 6 of 9 START sql table model main.fct_daily_sales .............................. [RUN]
+[0m21:46:13.469994 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:46:13.470181 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_orders, now model.ecommerce_analytics.fct_orders)
+[0m21:46:13.470355 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_order_items, now model.ecommerce_analytics.fct_daily_sales)
+[0m21:46:13.470510 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: COMMIT
+[0m21:46:13.470663 [debug] [Thread-3 (]: Began compiling node model.ecommerce_analytics.fct_orders
+[0m21:46:13.470815 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.fct_daily_sales
+[0m21:46:13.472530 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_analytics.fct_orders"
+[0m21:46:13.473873 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.fct_daily_sales"
+[0m21:46:13.474072 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m21:46:13.475596 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.stg_customers"
+[0m21:46:13.475778 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_customers"} */
+
+      drop view if exists "ecommerce"."main"."stg_customers__dbt_backup" cascade
+    
+[0m21:46:13.476121 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.fct_daily_sales
+[0m21:46:13.476302 [debug] [Thread-3 (]: Began executing node model.ecommerce_analytics.fct_orders
+[0m21:46:13.477700 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.fct_daily_sales"
+[0m21:46:13.479249 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_analytics.fct_orders"
+[0m21:46:13.479407 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m21:46:13.480119 [debug] [Thread-1 (]: On model.ecommerce_analytics.stg_customers: Close
+[0m21:46:13.480375 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117a6c150>]}
+[0m21:46:13.480982 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:46:13.480749 [info ] [Thread-1 (]: 1 of 9 OK created sql table model main.stg_customers ........................... [[32mOK[0m in 0.12s]
+[0m21:46:13.481234 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:46:13.481409 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: BEGIN
+[0m21:46:13.481650 [debug] [Thread-1 (]: Finished running node model.ecommerce_analytics.stg_customers
+[0m21:46:13.481805 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: BEGIN
+[0m21:46:13.481948 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:46:13.482152 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:46:13.482548 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.482732 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:46:13.482909 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.483125 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_daily_sales"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."fct_daily_sales__dbt_tmp"
+  
+    as (
+      with orders as (
+    select * from "ecommerce"."main"."stg_orders"
+    where status = 'completed'
+)
+
+select
+    cast(order_date as date) as sales_date,
+    count(distinct order_id) as total_orders,
+    round(sum(total_amount), 2) as daily_revenue,
+    round(avg(total_amount), 2) as average_order_value
+from orders
+group by 1
+order by 1
+    );
+  
+  
+[0m21:46:13.483308 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:46:13.483588 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."fct_orders__dbt_tmp"
+  
+    as (
+      with orders as (
+    select * from "ecommerce"."main"."stg_orders"
+),
+order_items as (
+    select * from "ecommerce"."main"."stg_order_items"
+),
+products as (
+    select * from "ecommerce"."main"."stg_products"
+)
+
+select
+    oi.item_id,
+    o.order_id,
+    o.customer_id,
+    o.order_date,
+    o.status,
+    oi.product_id,
+    p.product_name,
+    p.category as product_category,
+    oi.quantity,
+    oi.price as unit_price,
+    (oi.quantity * oi.price) as item_revenue
+from order_items oi
+join orders o on oi.order_id = o.order_id
+join products p on oi.product_id = p.product_id
+    );
+  
+  
+[0m21:46:13.489069 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m21:46:13.489740 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:46:13.489912 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_daily_sales"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_daily_sales'
+  
+[0m21:46:13.490467 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.491281 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:46:13.491536 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_daily_sales"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_daily_sales'
+  
+[0m21:46:13.491720 [debug] [Thread-3 (]: SQL status: OK in 0.008 seconds
+[0m21:46:13.492365 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:46:13.492567 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_orders'
+  
+[0m21:46:13.492730 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.494417 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:46:13.494646 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_daily_sales"} */
+alter table "ecommerce"."main"."fct_daily_sales" rename to "fct_daily_sales__dbt_backup"
+[0m21:46:13.494857 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.495631 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:46:13.495817 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_orders'
+  
+[0m21:46:13.496039 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.497380 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:46:13.497558 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_daily_sales"} */
+alter table "ecommerce"."main"."fct_daily_sales__dbt_tmp" rename to "fct_daily_sales"
+[0m21:46:13.497767 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.499643 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:46:13.499806 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */
+alter table "ecommerce"."main"."fct_orders" rename to "fct_orders__dbt_backup"
+[0m21:46:13.500056 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.500297 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.501137 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: COMMIT
+[0m21:46:13.502533 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:46:13.502710 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:46:13.502867 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */
+alter table "ecommerce"."main"."fct_orders__dbt_tmp" rename to "fct_orders"
+[0m21:46:13.503015 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: COMMIT
+[0m21:46:13.503384 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.504115 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: COMMIT
+[0m21:46:13.504267 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:46:13.504406 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: COMMIT
+[0m21:46:13.504548 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.506079 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_daily_sales"
+[0m21:46:13.506360 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_daily_sales"} */
+
+      drop table if exists "ecommerce"."main"."fct_daily_sales__dbt_backup" cascade
+    
+[0m21:46:13.506660 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.507788 [debug] [Thread-3 (]: Using duckdb connection "model.ecommerce_analytics.fct_orders"
+[0m21:46:13.507957 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */
+
+      drop table if exists "ecommerce"."main"."fct_orders__dbt_backup" cascade
+    
+[0m21:46:13.508117 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.508866 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_daily_sales: Close
+[0m21:46:13.509158 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117c6be00>]}
+[0m21:46:13.509326 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.510285 [debug] [Thread-3 (]: On model.ecommerce_analytics.fct_orders: Close
+[0m21:46:13.509639 [info ] [Thread-2 (]: 6 of 9 OK created sql table model main.fct_daily_sales ......................... [[32mOK[0m in 0.04s]
+[0m21:46:13.510590 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.fct_daily_sales
+[0m21:46:13.510788 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117a406b0>]}
+[0m21:46:13.511086 [info ] [Thread-3 (]: 7 of 9 OK created sql table model main.fct_orders .............................. [[32mOK[0m in 0.04s]
+[0m21:46:13.511313 [debug] [Thread-3 (]: Finished running node model.ecommerce_analytics.fct_orders
+[0m21:46:13.539928 [debug] [Thread-4 (]: SQL status: OK in 0.072 seconds
+[0m21:46:13.540631 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:46:13.540801 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_web_events"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'stg_web_events'
+  
+[0m21:46:13.541455 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.542293 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:46:13.542479 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_web_events"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'stg_web_events'
+  
+[0m21:46:13.543090 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.544679 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:46:13.544847 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_web_events"} */
+alter view "ecommerce"."main"."stg_web_events" rename to "stg_web_events__dbt_backup"
+[0m21:46:13.545160 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.546851 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:46:13.547069 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_web_events"} */
+alter table "ecommerce"."main"."stg_web_events__dbt_tmp" rename to "stg_web_events"
+[0m21:46:13.547381 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.548126 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: COMMIT
+[0m21:46:13.548275 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:46:13.548408 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: COMMIT
+[0m21:46:13.556115 [debug] [Thread-4 (]: SQL status: OK in 0.008 seconds
+[0m21:46:13.557240 [debug] [Thread-4 (]: Using duckdb connection "model.ecommerce_analytics.stg_web_events"
+[0m21:46:13.557402 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_web_events"} */
+
+      drop view if exists "ecommerce"."main"."stg_web_events__dbt_backup" cascade
+    
+[0m21:46:13.557978 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.558888 [debug] [Thread-4 (]: On model.ecommerce_analytics.stg_web_events: Close
+[0m21:46:13.559193 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117c16990>]}
+[0m21:46:13.559538 [info ] [Thread-4 (]: 5 of 9 OK created sql table model main.stg_web_events .......................... [[32mOK[0m in 0.11s]
+[0m21:46:13.559860 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.stg_web_events
+[0m21:46:13.560247 [debug] [Thread-1 (]: Began running node model.ecommerce_analytics.dim_customers
+[0m21:46:13.560500 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.fct_funnel_analysis
+[0m21:46:13.560791 [info ] [Thread-1 (]: 8 of 9 START sql table model main.dim_customers ................................ [RUN]
+[0m21:46:13.561036 [info ] [Thread-2 (]: 9 of 9 START sql table model main.fct_funnel_analysis .......................... [RUN]
+[0m21:46:13.561272 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_customers, now model.ecommerce_analytics.dim_customers)
+[0m21:46:13.561479 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.fct_daily_sales, now model.ecommerce_analytics.fct_funnel_analysis)
+[0m21:46:13.561656 [debug] [Thread-1 (]: Began compiling node model.ecommerce_analytics.dim_customers
+[0m21:46:13.561816 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.fct_funnel_analysis
+[0m21:46:13.563806 [debug] [Thread-1 (]: Writing injected SQL for node "model.ecommerce_analytics.dim_customers"
+[0m21:46:13.565097 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:46:13.565603 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.fct_funnel_analysis
+[0m21:46:13.567477 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:46:13.567682 [debug] [Thread-1 (]: Began executing node model.ecommerce_analytics.dim_customers
+[0m21:46:13.569073 [debug] [Thread-1 (]: Writing runtime sql for node "model.ecommerce_analytics.dim_customers"
+[0m21:46:13.569408 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:46:13.569591 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:46:13.569745 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_funnel_analysis: BEGIN
+[0m21:46:13.569913 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: BEGIN
+[0m21:46:13.570054 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:46:13.570189 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:46:13.570614 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.570790 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.570942 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:46:13.571094 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:46:13.571258 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_funnel_analysis: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_funnel_analysis"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."fct_funnel_analysis__dbt_tmp"
+  
+    as (
+      with events as (
+    select * from "ecommerce"."main"."stg_web_events"
+)
+
+select
+    count(case when event_type = 'view_item' then 1 end) as total_views,
+    count(case when event_type = 'add_to_cart' then 1 end) as total_cart_additions,
+    count(case when event_type = 'purchase' then 1 end) as total_purchases
+from events
+    );
+  
+  
+[0m21:46:13.571496 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.dim_customers"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."dim_customers__dbt_tmp"
+  
+    as (
+      with customers as (
+    select * from "ecommerce"."main"."stg_customers"
+),
+orders as (
+    select * from "ecommerce"."main"."stg_orders"
+    where status = 'completed'
+),
+web_events as (
+    select * from "ecommerce"."main"."stg_web_events"
+),
+customer_orders as (
+    select
+        customer_id,
+        count(distinct order_id) as total_orders,
+        sum(total_amount) as total_spend,
+        min(order_date) as first_order_date,
+        max(order_date) as last_order_date
+    from orders
+    group by 1
+),
+customer_web as (
+    select
+        customer_id,
+        count(distinct session_id) as total_sessions,
+        count(case when event_type = 'view_item' then 1 end) as total_page_views,
+        count(case when event_type = 'add_to_cart' then 1 end) as total_cart_additions
+    from web_events
+    group by 1
+),
+max_dataset_date as (
+    select max(order_date) as max_date from orders
+)
+
+select
+    c.customer_id,
+    c.join_date,
+    c.age,
+    c.gender,
+    c.country,
+    c.acquisition_channel,
+    coalesce(co.total_orders, 0) as total_orders,
+    coalesce(co.total_spend, 0.0) as total_spend,
+    case 
+        when coalesce(co.total_orders, 0) > 0 then round(co.total_spend / co.total_orders, 2)
+        else 0.0 
+    end as average_order_value,
+    co.first_order_date,
+    co.last_order_date,
+    coalesce(
+        date_diff('day', co.last_order_date, (select max_date from max_dataset_date)), 
+        date_diff('day', cast(c.join_date as timestamp), (select max_date from max_dataset_date))
+    ) as recency_days,
+    coalesce(cw.total_sessions, 0) as total_sessions,
+    coalesce(cw.total_page_views, 0) as total_page_views,
+    coalesce(cw.total_cart_additions, 0) as total_cart_additions,
+    case 
+        when coalesce(date_diff('day', co.last_order_date, (select max_date from max_dataset_date)), 999) > 45 then 1 
+        else 0 
+    end as is_churned
+from customers c
+left join customer_orders co on c.customer_id = co.customer_id
+left join customer_web cw on c.customer_id = cw.customer_id
+    );
+  
+  
+[0m21:46:13.573790 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m21:46:13.574311 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:46:13.574466 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_funnel_analysis: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_funnel_analysis"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_funnel_analysis'
+  
+[0m21:46:13.574928 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.575553 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:46:13.575800 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_funnel_analysis: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_funnel_analysis"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_funnel_analysis'
+  
+[0m21:46:13.576431 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.578147 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:46:13.578372 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_funnel_analysis: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_funnel_analysis"} */
+alter table "ecommerce"."main"."fct_funnel_analysis" rename to "fct_funnel_analysis__dbt_backup"
+[0m21:46:13.578843 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.582049 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:46:13.582258 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_funnel_analysis: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_funnel_analysis"} */
+alter table "ecommerce"."main"."fct_funnel_analysis__dbt_tmp" rename to "fct_funnel_analysis"
+[0m21:46:13.582603 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.582774 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m21:46:13.583606 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_funnel_analysis: COMMIT
+[0m21:46:13.584092 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:46:13.584269 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:46:13.584430 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.dim_customers"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'dim_customers'
+  
+[0m21:46:13.584607 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_funnel_analysis: COMMIT
+[0m21:46:13.585112 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.585287 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.585851 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:46:13.586891 [debug] [Thread-2 (]: Using duckdb connection "model.ecommerce_analytics.fct_funnel_analysis"
+[0m21:46:13.587068 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.dim_customers"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'dim_customers'
+  
+[0m21:46:13.587245 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_funnel_analysis: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_funnel_analysis"} */
+
+      drop table if exists "ecommerce"."main"."fct_funnel_analysis__dbt_backup" cascade
+    
+[0m21:46:13.587708 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.588364 [debug] [Thread-2 (]: On model.ecommerce_analytics.fct_funnel_analysis: Close
+[0m21:46:13.588532 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.588838 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117a40ef0>]}
+[0m21:46:13.590622 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:46:13.591079 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.dim_customers"} */
+alter table "ecommerce"."main"."dim_customers" rename to "dim_customers__dbt_backup"
+[0m21:46:13.590931 [info ] [Thread-2 (]: 9 of 9 OK created sql table model main.fct_funnel_analysis ..................... [[32mOK[0m in 0.03s]
+[0m21:46:13.591407 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.fct_funnel_analysis
+[0m21:46:13.591576 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.592857 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:46:13.593017 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.dim_customers"} */
+alter table "ecommerce"."main"."dim_customers__dbt_tmp" rename to "dim_customers"
+[0m21:46:13.593295 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.594032 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: COMMIT
+[0m21:46:13.594184 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:46:13.594322 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: COMMIT
+[0m21:46:13.595089 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:46:13.596284 [debug] [Thread-1 (]: Using duckdb connection "model.ecommerce_analytics.dim_customers"
+[0m21:46:13.596443 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.dim_customers"} */
+
+      drop table if exists "ecommerce"."main"."dim_customers__dbt_backup" cascade
+    
+[0m21:46:13.596916 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:46:13.597567 [debug] [Thread-1 (]: On model.ecommerce_analytics.dim_customers: Close
+[0m21:46:13.597826 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d02a652-d7e9-4b52-acae-b6ad6df9b152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116ffbf50>]}
+[0m21:46:13.598094 [info ] [Thread-1 (]: 8 of 9 OK created sql table model main.dim_customers ........................... [[32mOK[0m in 0.04s]
+[0m21:46:13.598326 [debug] [Thread-1 (]: Finished running node model.ecommerce_analytics.dim_customers
+[0m21:46:13.598943 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:46:13.599087 [debug] [MainThread]: On master: BEGIN
+[0m21:46:13.599202 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:46:13.599497 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:46:13.599614 [debug] [MainThread]: On master: COMMIT
+[0m21:46:13.599724 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:46:13.599827 [debug] [MainThread]: On master: COMMIT
+[0m21:46:13.600003 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:46:13.600111 [debug] [MainThread]: On master: Close
+[0m21:46:13.600260 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:46:13.600365 [debug] [MainThread]: Connection 'model.ecommerce_analytics.dim_customers' was properly closed.
+[0m21:46:13.600464 [debug] [MainThread]: Connection 'model.ecommerce_analytics.fct_orders' was properly closed.
+[0m21:46:13.600556 [debug] [MainThread]: Connection 'model.ecommerce_analytics.stg_web_events' was properly closed.
+[0m21:46:13.600650 [debug] [MainThread]: Connection 'model.ecommerce_analytics.fct_funnel_analysis' was properly closed.
+[0m21:46:13.600795 [info ] [MainThread]: 
+[0m21:46:13.600925 [info ] [MainThread]: Finished running 9 table models in 0 hours 0 minutes and 0.30 seconds (0.30s).
+[0m21:46:13.601660 [debug] [MainThread]: Command end result
+[0m21:46:13.618457 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/manifest.json
+[0m21:46:13.619620 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/semantic_manifest.json
+[0m21:46:13.622765 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sachitbatra/Desktop/ecommerce/ecommerce_analytics/dbt/target/run_results.json
+[0m21:46:13.622919 [info ] [MainThread]: 
+[0m21:46:13.623080 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:46:13.623202 [info ] [MainThread]: 
+[0m21:46:13.623335 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+[0m21:46:13.623904 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.75119823, "process_in_blocks": "0", "process_kernel_time": 0.189233, "process_mem_max_rss": "213843968", "process_out_blocks": "0", "process_user_time": 1.510201}
+[0m21:46:13.624114 [debug] [MainThread]: Command `dbt run` succeeded at 21:46:13.624071 after 0.75 seconds
+[0m21:46:13.624289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116506390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117cc3b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117cc3a10>]}
+[0m21:46:13.624452 [debug] [MainThread]: Flushing usage events
+[0m21:46:14.805589 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,23 @@
+{
+    "churn_features": [
+        "age",
+        "gender",
+        "country",
+        "acquisition_channel",
+        "total_orders",
+        "total_spend",
+        "average_order_value",
+        "total_sessions",
+        "total_page_views",
+        "total_cart_additions"
+    ],
+    "clv_features": [
+        "age",
+        "gender",
+        "country",
+        "acquisition_channel",
+        "total_sessions",
+        "total_page_views",
+        "total_cart_additions"
+    ]
+}

@@ -1,0 +1,1001 @@
+customer_id,join_date,age,gender,country,acquisition_channel
+C0001,2025-11-24,40,Non-binary,USA,Organic
+C0002,2025-05-21,33,Male,Canada,Paid Search
+C0003,2025-02-22,42,Non-binary,France,Organic
+C0004,2025-08-05,53,Male,USA,Organic
+C0005,2025-04-22,32,Non-binary,Canada,Referral
+C0006,2025-01-14,32,Non-binary,France,Paid Search
+C0007,2025-11-29,53,Male,France,Email
+C0008,2025-08-18,44,Male,France,Social Media
+C0009,2025-03-23,29,Female,Germany,Social Media
+C0010,2025-03-21,41,Male,Canada,Social Media
+C0011,2025-02-17,29,Female,Germany,Organic
+C0012,2025-06-26,29,Male,France,Social Media
+C0013,2025-08-24,37,Female,France,Organic
+C0014,2025-02-10,18,Non-binary,France,Social Media
+C0015,2025-11-13,18,Male,UK,Referral
+C0016,2025-12-27,28,Non-binary,USA,Organic
+C0017,2025-04-27,22,Male,UK,Organic
+C0018,2025-02-21,38,Female,Germany,Social Media
+C0019,2025-11-22,24,Female,UK,Paid Search
+C0020,2025-07-01,18,Non-binary,Canada,Social Media
+C0021,2025-12-16,52,Non-binary,USA,Referral
+C0022,2025-03-29,32,Male,France,Paid Search
+C0023,2025-08-25,35,Non-binary,Germany,Social Media
+C0024,2025-12-19,18,Non-binary,France,Paid Search
+C0025,2025-06-16,28,Male,USA,Paid Search
+C0026,2025-06-11,36,Male,Germany,Social Media
+C0027,2025-04-19,21,Male,France,Social Media
+C0028,2025-12-02,39,Non-binary,Germany,Email
+C0029,2025-08-23,27,Male,Canada,Social Media
+C0030,2025-05-07,31,Female,France,Referral
+C0031,2025-10-27,27,Female,Germany,Referral
+C0032,2025-07-05,57,Non-binary,Canada,Paid Search
+C0033,2025-09-10,34,Male,USA,Organic
+C0034,2025-03-20,22,Non-binary,Canada,Email
+C0035,2025-02-02,44,Non-binary,Germany,Email
+C0036,2025-08-28,20,Non-binary,France,Social Media
+C0037,2025-01-06,37,Female,USA,Referral
+C0038,2025-11-25,18,Female,UK,Organic
+C0039,2025-08-11,19,Male,Canada,Email
+C0040,2025-05-15,37,Non-binary,France,Paid Search
+C0041,2025-02-24,43,Non-binary,UK,Referral
+C0042,2025-04-12,37,Male,Canada,Social Media
+C0043,2025-10-04,33,Non-binary,France,Organic
+C0044,2025-06-15,31,Male,Germany,Organic
+C0045,2025-07-05,18,Male,UK,Paid Search
+C0046,2025-05-04,26,Male,France,Organic
+C0047,2025-09-06,29,Male,USA,Referral
+C0048,2025-03-07,47,Male,Germany,Referral
+C0049,2025-05-16,39,Female,France,Referral
+C0050,2025-04-19,18,Non-binary,France,Paid Search
+C0051,2025-06-09,38,Female,Germany,Social Media
+C0052,2025-09-22,30,Male,Germany,Organic
+C0053,2025-04-26,26,Male,USA,Social Media
+C0054,2025-10-29,42,Non-binary,France,Paid Search
+C0055,2025-04-23,47,Non-binary,USA,Organic
+C0056,2025-11-20,46,Male,USA,Paid Search
+C0057,2025-01-17,24,Non-binary,UK,Organic
+C0058,2025-05-02,31,Male,UK,Email
+C0059,2025-10-04,38,Non-binary,Canada,Referral
+C0060,2025-08-31,46,Female,Canada,Email
+C0061,2025-04-08,29,Non-binary,USA,Organic
+C0062,2025-08-09,32,Female,UK,Email
+C0063,2025-08-28,21,Male,USA,Organic
+C0064,2025-07-26,20,Male,UK,Organic
+C0065,2025-04-09,44,Female,Canada,Referral
+C0066,2025-03-13,51,Female,Germany,Paid Search
+C0067,2025-08-25,34,Female,Canada,Organic
+C0068,2025-10-09,47,Non-binary,USA,Organic
+C0069,2025-10-04,39,Male,USA,Organic
+C0070,2025-03-27,27,Female,Germany,Email
+C0071,2025-04-20,39,Male,Germany,Organic
+C0072,2025-07-14,53,Female,USA,Email
+C0073,2025-08-21,34,Non-binary,UK,Email
+C0074,2025-10-12,53,Male,Germany,Paid Search
+C0075,2025-06-01,18,Non-binary,Canada,Organic
+C0076,2025-10-05,44,Male,USA,Social Media
+C0077,2025-01-26,36,Non-binary,France,Email
+C0078,2025-09-29,31,Non-binary,Canada,Organic
+C0079,2025-02-11,36,Non-binary,Canada,Organic
+C0080,2025-02-04,18,Male,Canada,Email
+C0081,2025-10-19,32,Non-binary,Canada,Referral
+C0082,2025-01-21,39,Female,France,Organic
+C0083,2025-12-03,52,Non-binary,France,Referral
+C0084,2025-06-11,28,Non-binary,UK,Paid Search
+C0085,2025-06-10,25,Female,Canada,Social Media
+C0086,2025-03-09,28,Female,UK,Email
+C0087,2025-02-07,45,Non-binary,USA,Email
+C0088,2025-10-16,38,Non-binary,USA,Organic
+C0089,2025-04-20,28,Male,France,Social Media
+C0090,2025-06-28,41,Female,USA,Paid Search
+C0091,2025-05-26,36,Non-binary,Canada,Email
+C0092,2025-12-27,46,Non-binary,UK,Referral
+C0093,2025-09-28,26,Female,USA,Referral
+C0094,2025-12-06,31,Female,USA,Paid Search
+C0095,2025-03-01,30,Male,USA,Referral
+C0096,2025-05-20,18,Male,UK,Referral
+C0097,2025-06-25,38,Non-binary,Canada,Social Media
+C0098,2025-09-08,38,Male,UK,Organic
+C0099,2025-11-21,35,Male,Germany,Social Media
+C0100,2025-01-02,32,Non-binary,UK,Paid Search
+C0101,2025-05-15,18,Non-binary,Canada,Email
+C0102,2025-12-28,29,Male,Germany,Referral
+C0103,2025-02-27,30,Non-binary,USA,Paid Search
+C0104,2025-01-19,25,Non-binary,UK,Referral
+C0105,2025-03-17,33,Male,Germany,Paid Search
+C0106,2025-06-07,39,Female,UK,Organic
+C0107,2025-04-18,57,Female,Canada,Organic
+C0108,2025-10-14,37,Non-binary,Germany,Referral
+C0109,2025-03-21,38,Male,Canada,Paid Search
+C0110,2025-07-31,34,Non-binary,USA,Paid Search
+C0111,2025-06-20,18,Female,Germany,Paid Search
+C0112,2025-03-23,34,Male,USA,Email
+C0113,2025-08-29,35,Female,Canada,Paid Search
+C0114,2025-06-29,64,Male,UK,Paid Search
+C0115,2025-01-13,32,Female,Canada,Email
+C0116,2025-05-23,38,Female,USA,Social Media
+C0117,2025-11-25,34,Non-binary,France,Email
+C0118,2025-10-02,20,Male,UK,Organic
+C0119,2025-05-14,48,Female,Canada,Referral
+C0120,2025-01-20,44,Female,USA,Referral
+C0121,2025-06-26,44,Non-binary,UK,Email
+C0122,2025-09-19,24,Non-binary,USA,Email
+C0123,2025-04-08,51,Non-binary,UK,Organic
+C0124,2025-08-12,18,Non-binary,USA,Referral
+C0125,2025-12-18,42,Female,Canada,Social Media
+C0126,2025-02-05,61,Female,UK,Referral
+C0127,2025-12-06,23,Non-binary,USA,Social Media
+C0128,2025-06-08,28,Female,Germany,Social Media
+C0129,2025-12-23,36,Male,UK,Referral
+C0130,2025-04-09,28,Non-binary,Germany,Email
+C0131,2025-03-31,18,Female,France,Referral
+C0132,2025-07-27,35,Female,France,Organic
+C0133,2025-05-27,22,Non-binary,Canada,Email
+C0134,2025-11-07,40,Female,UK,Email
+C0135,2025-08-15,23,Female,Canada,Referral
+C0136,2025-03-28,53,Non-binary,USA,Social Media
+C0137,2025-12-06,25,Male,France,Social Media
+C0138,2025-05-01,31,Male,UK,Paid Search
+C0139,2025-03-17,44,Male,USA,Organic
+C0140,2025-09-01,20,Female,France,Organic
+C0141,2025-08-01,37,Non-binary,France,Paid Search
+C0142,2025-12-23,50,Female,Germany,Email
+C0143,2025-05-05,18,Male,Canada,Organic
+C0144,2025-08-06,37,Non-binary,Canada,Paid Search
+C0145,2025-09-23,38,Non-binary,Germany,Organic
+C0146,2025-05-08,44,Male,USA,Email
+C0147,2025-08-26,20,Non-binary,France,Referral
+C0148,2025-06-12,19,Non-binary,Germany,Referral
+C0149,2025-09-16,41,Female,Germany,Referral
+C0150,2025-03-23,38,Female,Germany,Email
+C0151,2025-05-07,38,Female,UK,Referral
+C0152,2025-11-17,39,Female,Canada,Social Media
+C0153,2025-02-09,26,Female,UK,Paid Search
+C0154,2025-06-21,37,Male,UK,Referral
+C0155,2025-03-12,38,Female,Canada,Paid Search
+C0156,2025-12-22,26,Male,Canada,Paid Search
+C0157,2025-08-01,57,Non-binary,Germany,Social Media
+C0158,2025-08-27,40,Male,Germany,Organic
+C0159,2025-08-04,20,Non-binary,Germany,Referral
+C0160,2025-01-11,42,Female,France,Email
+C0161,2025-01-04,23,Female,UK,Social Media
+C0162,2025-08-03,44,Non-binary,France,Referral
+C0163,2025-04-23,48,Female,Germany,Paid Search
+C0164,2025-08-12,25,Female,Germany,Organic
+C0165,2025-06-22,46,Female,Germany,Paid Search
+C0166,2025-03-07,39,Male,France,Referral
+C0167,2025-07-21,44,Non-binary,France,Referral
+C0168,2025-01-14,57,Male,USA,Email
+C0169,2025-08-25,32,Female,Canada,Organic
+C0170,2025-07-14,25,Female,UK,Paid Search
+C0171,2025-06-17,24,Female,UK,Email
+C0172,2025-08-04,25,Female,UK,Organic
+C0173,2025-01-10,34,Female,France,Organic
+C0174,2025-04-25,39,Male,USA,Organic
+C0175,2025-05-07,38,Non-binary,Canada,Organic
+C0176,2025-03-20,44,Female,Canada,Paid Search
+C0177,2025-12-09,35,Male,USA,Referral
+C0178,2025-08-27,52,Male,UK,Social Media
+C0179,2025-11-07,31,Male,France,Organic
+C0180,2025-06-09,67,Male,USA,Referral
+C0181,2025-06-09,42,Female,France,Email
+C0182,2025-04-12,24,Non-binary,USA,Referral
+C0183,2025-11-18,22,Non-binary,Canada,Organic
+C0184,2025-06-04,40,Non-binary,France,Organic
+C0185,2025-01-22,32,Female,UK,Referral
+C0186,2025-12-05,43,Non-binary,UK,Organic
+C0187,2025-11-28,40,Female,UK,Organic
+C0188,2025-09-08,34,Female,USA,Email
+C0189,2025-11-22,24,Female,Germany,Paid Search
+C0190,2025-04-01,18,Non-binary,France,Social Media
+C0191,2025-10-03,29,Female,Germany,Email
+C0192,2025-10-31,45,Male,UK,Social Media
+C0193,2025-02-14,37,Male,UK,Email
+C0194,2025-08-26,20,Non-binary,France,Referral
+C0195,2025-07-14,37,Female,UK,Organic
+C0196,2025-06-16,39,Male,Canada,Email
+C0197,2025-07-01,24,Female,UK,Social Media
+C0198,2025-11-02,36,Male,UK,Referral
+C0199,2025-09-22,35,Male,Canada,Organic
+C0200,2025-07-28,21,Male,Germany,Referral
+C0201,2025-12-20,39,Female,Germany,Email
+C0202,2025-01-09,41,Male,USA,Social Media
+C0203,2025-07-27,47,Non-binary,Canada,Social Media
+C0204,2025-10-25,47,Non-binary,UK,Email
+C0205,2025-09-29,18,Non-binary,UK,Email
+C0206,2025-10-09,23,Non-binary,UK,Social Media
+C0207,2025-08-21,41,Female,UK,Social Media
+C0208,2025-04-29,41,Female,USA,Paid Search
+C0209,2025-03-03,41,Male,France,Paid Search
+C0210,2025-04-21,75,Non-binary,Germany,Social Media
+C0211,2025-10-29,41,Female,France,Referral
+C0212,2025-02-21,48,Male,Canada,Social Media
+C0213,2025-07-04,46,Male,Canada,Social Media
+C0214,2025-12-29,42,Female,France,Paid Search
+C0215,2025-01-24,31,Female,USA,Referral
+C0216,2025-12-24,44,Male,Canada,Email
+C0217,2025-01-07,25,Female,France,Social Media
+C0218,2025-09-03,32,Male,Germany,Social Media
+C0219,2025-01-27,29,Male,UK,Email
+C0220,2025-02-03,35,Male,Germany,Email
+C0221,2025-10-23,62,Male,USA,Paid Search
+C0222,2025-10-16,18,Male,UK,Organic
+C0223,2025-03-02,43,Non-binary,France,Email
+C0224,2025-11-02,18,Non-binary,France,Paid Search
+C0225,2025-07-14,29,Female,Germany,Email
+C0226,2025-10-29,48,Non-binary,Germany,Social Media
+C0227,2025-11-14,35,Non-binary,USA,Referral
+C0228,2025-02-20,22,Female,Canada,Paid Search
+C0229,2025-12-05,26,Male,USA,Paid Search
+C0230,2025-03-30,43,Male,France,Organic
+C0231,2025-01-02,26,Non-binary,Germany,Email
+C0232,2025-11-01,37,Male,Germany,Social Media
+C0233,2025-04-29,35,Non-binary,UK,Social Media
+C0234,2025-08-21,27,Female,USA,Paid Search
+C0235,2025-11-17,60,Female,France,Paid Search
+C0236,2025-02-28,42,Non-binary,France,Paid Search
+C0237,2025-03-18,18,Male,UK,Paid Search
+C0238,2025-01-31,37,Non-binary,Canada,Social Media
+C0239,2025-10-19,27,Male,UK,Email
+C0240,2025-08-28,45,Female,UK,Email
+C0241,2025-09-14,25,Female,France,Email
+C0242,2025-02-11,33,Female,France,Organic
+C0243,2025-06-15,41,Male,France,Social Media
+C0244,2025-02-16,45,Non-binary,Canada,Referral
+C0245,2025-01-11,20,Male,UK,Referral
+C0246,2025-03-31,30,Non-binary,Germany,Referral
+C0247,2025-08-15,29,Non-binary,UK,Paid Search
+C0248,2025-08-12,27,Female,Germany,Organic
+C0249,2025-06-28,56,Female,Germany,Social Media
+C0250,2025-12-10,39,Female,USA,Paid Search
+C0251,2025-07-30,19,Non-binary,Germany,Social Media
+C0252,2025-07-25,46,Female,France,Organic
+C0253,2025-02-15,60,Female,UK,Social Media
+C0254,2025-03-01,47,Male,Germany,Referral
+C0255,2025-12-03,18,Female,France,Email
+C0256,2025-01-28,29,Female,Canada,Referral
+C0257,2025-11-15,50,Male,Germany,Email
+C0258,2025-04-15,26,Male,UK,Referral
+C0259,2025-05-28,40,Male,Germany,Email
+C0260,2025-01-15,44,Non-binary,France,Paid Search
+C0261,2025-03-23,23,Male,UK,Referral
+C0262,2025-10-10,34,Male,Germany,Organic
+C0263,2025-02-28,18,Non-binary,Germany,Organic
+C0264,2025-03-20,22,Non-binary,Germany,Social Media
+C0265,2025-12-28,31,Female,UK,Email
+C0266,2025-08-30,20,Non-binary,Canada,Email
+C0267,2025-03-16,54,Non-binary,Germany,Paid Search
+C0268,2025-09-18,18,Female,Canada,Organic
+C0269,2025-08-01,29,Female,UK,Referral
+C0270,2025-01-02,36,Non-binary,UK,Social Media
+C0271,2025-10-24,52,Female,Germany,Paid Search
+C0272,2025-10-03,18,Female,Germany,Social Media
+C0273,2025-10-10,48,Female,France,Email
+C0274,2025-06-14,35,Non-binary,Canada,Paid Search
+C0275,2025-07-16,23,Male,Canada,Email
+C0276,2025-06-12,40,Female,Germany,Email
+C0277,2025-12-06,37,Male,Canada,Email
+C0278,2025-03-06,27,Female,France,Referral
+C0279,2025-02-21,35,Non-binary,Germany,Organic
+C0280,2025-08-22,30,Female,USA,Paid Search
+C0281,2025-12-02,36,Female,Canada,Organic
+C0282,2025-05-16,42,Non-binary,UK,Referral
+C0283,2025-07-23,54,Non-binary,USA,Social Media
+C0284,2025-10-01,20,Non-binary,Germany,Social Media
+C0285,2025-09-07,60,Non-binary,France,Organic
+C0286,2025-02-05,18,Male,Canada,Social Media
+C0287,2025-02-16,33,Non-binary,Germany,Organic
+C0288,2025-12-27,42,Male,USA,Email
+C0289,2025-12-22,38,Male,UK,Organic
+C0290,2025-06-16,27,Female,USA,Social Media
+C0291,2025-07-11,32,Male,Germany,Paid Search
+C0292,2025-09-29,29,Non-binary,Germany,Referral
+C0293,2025-04-03,27,Male,Canada,Paid Search
+C0294,2025-11-09,45,Non-binary,Germany,Referral
+C0295,2025-05-04,39,Male,Germany,Referral
+C0296,2025-04-29,26,Female,Germany,Social Media
+C0297,2025-05-11,45,Female,USA,Email
+C0298,2025-12-13,38,Male,France,Paid Search
+C0299,2025-08-15,44,Female,UK,Referral
+C0300,2025-11-24,42,Female,Germany,Social Media
+C0301,2025-06-04,25,Female,Canada,Email
+C0302,2025-02-24,28,Non-binary,Canada,Email
+C0303,2025-07-03,43,Non-binary,France,Social Media
+C0304,2025-06-01,42,Female,USA,Email
+C0305,2025-01-05,34,Non-binary,France,Organic
+C0306,2025-09-12,36,Non-binary,UK,Paid Search
+C0307,2025-06-30,50,Non-binary,Canada,Paid Search
+C0308,2025-05-09,27,Non-binary,Canada,Organic
+C0309,2025-11-27,41,Female,USA,Social Media
+C0310,2025-01-18,32,Non-binary,France,Social Media
+C0311,2025-03-09,32,Female,USA,Social Media
+C0312,2025-08-01,48,Male,Canada,Paid Search
+C0313,2025-10-04,44,Non-binary,UK,Referral
+C0314,2025-05-20,44,Female,Canada,Social Media
+C0315,2025-06-01,50,Female,UK,Organic
+C0316,2025-02-08,35,Non-binary,Canada,Paid Search
+C0317,2025-12-12,43,Female,Germany,Referral
+C0318,2025-02-16,31,Female,Germany,Organic
+C0319,2025-10-02,38,Female,USA,Email
+C0320,2025-12-11,33,Female,UK,Referral
+C0321,2025-11-23,36,Non-binary,UK,Organic
+C0322,2025-04-30,42,Non-binary,Germany,Organic
+C0323,2025-10-15,25,Male,UK,Referral
+C0324,2025-11-28,60,Non-binary,USA,Email
+C0325,2025-06-04,22,Male,Germany,Organic
+C0326,2025-01-24,20,Female,USA,Social Media
+C0327,2025-03-01,48,Non-binary,USA,Paid Search
+C0328,2025-03-11,44,Female,Germany,Email
+C0329,2025-12-10,42,Non-binary,France,Email
+C0330,2025-03-21,42,Female,Germany,Organic
+C0331,2025-11-12,34,Male,Germany,Social Media
+C0332,2025-12-20,24,Female,UK,Paid Search
+C0333,2025-08-16,35,Male,Canada,Social Media
+C0334,2025-12-18,26,Non-binary,UK,Referral
+C0335,2025-07-03,46,Female,USA,Email
+C0336,2025-04-08,33,Male,USA,Email
+C0337,2025-12-06,25,Male,Canada,Referral
+C0338,2025-01-26,31,Male,UK,Paid Search
+C0339,2025-10-17,39,Non-binary,Canada,Organic
+C0340,2025-04-17,28,Male,France,Paid Search
+C0341,2025-06-18,25,Male,Canada,Referral
+C0342,2025-05-22,37,Non-binary,Canada,Paid Search
+C0343,2025-05-09,37,Non-binary,Canada,Organic
+C0344,2025-01-14,28,Female,Canada,Organic
+C0345,2025-05-02,29,Male,France,Social Media
+C0346,2025-03-31,37,Male,UK,Organic
+C0347,2025-08-04,18,Non-binary,France,Organic
+C0348,2025-02-02,18,Female,Germany,Email
+C0349,2025-09-20,26,Female,France,Organic
+C0350,2025-09-15,32,Male,Canada,Referral
+C0351,2025-12-04,38,Female,France,Social Media
+C0352,2025-11-26,52,Female,USA,Organic
+C0353,2025-07-25,45,Female,Germany,Organic
+C0354,2025-12-31,33,Male,Germany,Organic
+C0355,2025-06-14,34,Male,France,Paid Search
+C0356,2025-03-06,22,Non-binary,UK,Referral
+C0357,2025-10-27,34,Female,France,Social Media
+C0358,2025-11-02,31,Female,France,Social Media
+C0359,2025-09-16,38,Male,France,Email
+C0360,2025-12-26,25,Non-binary,USA,Referral
+C0361,2025-04-21,41,Male,Germany,Email
+C0362,2025-07-31,53,Female,UK,Email
+C0363,2025-08-01,33,Female,USA,Social Media
+C0364,2025-06-10,39,Male,UK,Social Media
+C0365,2025-12-18,43,Male,Germany,Organic
+C0366,2025-02-13,30,Male,USA,Email
+C0367,2025-07-10,37,Male,Canada,Referral
+C0368,2025-10-28,35,Female,France,Referral
+C0369,2025-12-10,36,Female,USA,Email
+C0370,2025-12-07,25,Female,Germany,Organic
+C0371,2025-11-04,35,Male,UK,Social Media
+C0372,2025-10-23,40,Male,France,Paid Search
+C0373,2025-12-03,52,Male,Germany,Paid Search
+C0374,2025-06-29,46,Male,France,Social Media
+C0375,2025-05-23,60,Female,France,Paid Search
+C0376,2025-10-15,25,Non-binary,France,Referral
+C0377,2025-11-26,45,Non-binary,France,Organic
+C0378,2025-12-03,37,Male,UK,Organic
+C0379,2025-05-20,61,Female,UK,Social Media
+C0380,2025-01-04,25,Non-binary,Canada,Paid Search
+C0381,2025-12-03,24,Male,Germany,Organic
+C0382,2025-11-21,27,Non-binary,USA,Organic
+C0383,2025-09-29,18,Female,Canada,Email
+C0384,2025-08-21,28,Female,UK,Paid Search
+C0385,2025-06-09,25,Non-binary,UK,Referral
+C0386,2025-02-13,36,Male,USA,Paid Search
+C0387,2025-11-13,39,Female,USA,Organic
+C0388,2025-08-15,57,Non-binary,Germany,Email
+C0389,2025-08-15,46,Male,Germany,Social Media
+C0390,2025-09-20,28,Female,USA,Social Media
+C0391,2025-02-26,24,Female,UK,Referral
+C0392,2025-09-27,40,Male,UK,Organic
+C0393,2025-07-22,19,Male,France,Organic
+C0394,2025-04-15,56,Male,UK,Paid Search
+C0395,2025-05-11,49,Male,UK,Social Media
+C0396,2025-01-04,29,Male,Germany,Email
+C0397,2025-03-08,18,Non-binary,Germany,Referral
+C0398,2025-04-28,51,Non-binary,France,Referral
+C0399,2025-07-01,33,Non-binary,USA,Email
+C0400,2025-01-22,49,Female,Germany,Organic
+C0401,2025-02-09,18,Female,UK,Referral
+C0402,2025-10-21,27,Female,Germany,Email
+C0403,2025-02-28,35,Female,Germany,Organic
+C0404,2025-03-29,35,Non-binary,France,Email
+C0405,2025-07-05,29,Male,USA,Email
+C0406,2025-05-05,42,Female,Germany,Referral
+C0407,2025-09-26,22,Female,USA,Email
+C0408,2025-06-23,33,Male,Canada,Social Media
+C0409,2025-02-09,36,Non-binary,France,Organic
+C0410,2025-09-19,41,Female,Canada,Social Media
+C0411,2025-11-27,43,Male,Canada,Paid Search
+C0412,2025-03-16,21,Male,UK,Paid Search
+C0413,2025-11-05,18,Male,Canada,Organic
+C0414,2025-11-18,50,Non-binary,Germany,Email
+C0415,2025-10-24,38,Non-binary,Germany,Referral
+C0416,2025-11-22,26,Non-binary,France,Social Media
+C0417,2025-06-11,53,Male,Canada,Email
+C0418,2025-08-29,36,Female,Germany,Social Media
+C0419,2025-10-30,49,Non-binary,USA,Social Media
+C0420,2025-02-07,35,Female,UK,Email
+C0421,2025-01-20,59,Female,USA,Social Media
+C0422,2025-02-09,56,Non-binary,USA,Referral
+C0423,2025-09-17,32,Non-binary,Germany,Email
+C0424,2025-10-11,46,Non-binary,USA,Email
+C0425,2025-11-30,42,Non-binary,Canada,Social Media
+C0426,2025-09-01,51,Male,France,Paid Search
+C0427,2025-08-19,23,Non-binary,USA,Social Media
+C0428,2025-02-13,43,Male,France,Paid Search
+C0429,2025-05-07,47,Non-binary,Germany,Email
+C0430,2025-09-25,18,Female,France,Paid Search
+C0431,2025-07-10,20,Female,UK,Email
+C0432,2025-06-23,18,Non-binary,France,Organic
+C0433,2025-11-28,31,Female,UK,Organic
+C0434,2025-02-18,43,Female,France,Email
+C0435,2025-05-10,53,Female,France,Paid Search
+C0436,2025-02-11,35,Female,France,Paid Search
+C0437,2025-06-08,54,Non-binary,Germany,Paid Search
+C0438,2025-12-29,18,Non-binary,USA,Social Media
+C0439,2025-07-12,18,Non-binary,UK,Paid Search
+C0440,2025-12-26,34,Non-binary,France,Organic
+C0441,2025-12-10,39,Female,Germany,Referral
+C0442,2025-01-10,34,Male,UK,Social Media
+C0443,2025-04-20,18,Male,UK,Email
+C0444,2025-04-26,33,Male,Canada,Paid Search
+C0445,2025-06-01,19,Non-binary,USA,Referral
+C0446,2025-09-27,43,Non-binary,USA,Social Media
+C0447,2025-03-09,39,Male,France,Email
+C0448,2025-03-25,23,Male,Canada,Referral
+C0449,2025-08-13,28,Female,USA,Email
+C0450,2025-12-13,22,Non-binary,Canada,Email
+C0451,2025-05-26,34,Non-binary,Germany,Paid Search
+C0452,2025-05-03,46,Male,UK,Email
+C0453,2025-07-08,23,Female,France,Email
+C0454,2025-05-25,41,Non-binary,Germany,Referral
+C0455,2025-08-03,28,Non-binary,Canada,Paid Search
+C0456,2025-03-12,25,Non-binary,UK,Organic
+C0457,2025-09-04,33,Male,UK,Referral
+C0458,2025-12-31,22,Female,France,Organic
+C0459,2025-02-12,28,Female,Canada,Social Media
+C0460,2025-09-20,20,Male,Canada,Email
+C0461,2025-04-24,58,Male,Germany,Social Media
+C0462,2025-08-01,35,Non-binary,USA,Email
+C0463,2025-07-11,26,Male,Canada,Email
+C0464,2025-07-11,37,Female,Canada,Organic
+C0465,2025-02-20,33,Male,UK,Paid Search
+C0466,2025-01-20,32,Non-binary,UK,Email
+C0467,2025-03-13,42,Non-binary,Germany,Email
+C0468,2025-01-03,44,Female,USA,Organic
+C0469,2025-04-21,28,Non-binary,Canada,Referral
+C0470,2025-11-08,28,Male,France,Email
+C0471,2025-05-28,31,Male,Canada,Social Media
+C0472,2025-01-25,18,Non-binary,Canada,Email
+C0473,2025-11-15,18,Male,Germany,Organic
+C0474,2025-09-13,51,Male,France,Referral
+C0475,2025-11-20,54,Male,France,Referral
+C0476,2025-03-15,32,Male,UK,Email
+C0477,2025-11-11,41,Non-binary,UK,Paid Search
+C0478,2025-08-02,38,Non-binary,Canada,Organic
+C0479,2025-07-04,71,Non-binary,USA,Referral
+C0480,2025-09-17,48,Male,France,Referral
+C0481,2025-07-19,33,Non-binary,Germany,Organic
+C0482,2025-07-18,23,Non-binary,UK,Social Media
+C0483,2025-01-09,18,Female,UK,Organic
+C0484,2025-05-04,37,Non-binary,USA,Referral
+C0485,2025-06-20,25,Female,Canada,Organic
+C0486,2025-10-07,18,Non-binary,UK,Paid Search
+C0487,2025-08-26,27,Male,Germany,Paid Search
+C0488,2025-02-02,22,Female,Germany,Organic
+C0489,2025-04-14,55,Male,USA,Paid Search
+C0490,2025-06-11,45,Female,UK,Referral
+C0491,2025-10-06,34,Male,Germany,Social Media
+C0492,2025-11-28,52,Female,Canada,Social Media
+C0493,2025-01-25,35,Male,UK,Social Media
+C0494,2025-07-08,24,Non-binary,Germany,Email
+C0495,2025-08-14,53,Male,Germany,Social Media
+C0496,2025-09-12,41,Non-binary,Germany,Social Media
+C0497,2025-05-17,22,Male,USA,Email
+C0498,2025-08-09,32,Non-binary,France,Paid Search
+C0499,2025-05-31,24,Male,UK,Organic
+C0500,2025-06-17,18,Female,UK,Social Media
+C0501,2025-11-05,46,Non-binary,Germany,Paid Search
+C0502,2025-08-16,57,Male,UK,Email
+C0503,2025-06-30,18,Female,France,Email
+C0504,2025-11-24,41,Non-binary,USA,Organic
+C0505,2025-11-23,27,Non-binary,Germany,Social Media
+C0506,2025-12-14,29,Male,Canada,Organic
+C0507,2025-11-08,27,Male,Germany,Organic
+C0508,2025-02-04,24,Female,Canada,Social Media
+C0509,2025-07-16,35,Non-binary,France,Organic
+C0510,2025-03-20,25,Female,Germany,Social Media
+C0511,2025-08-16,38,Male,USA,Referral
+C0512,2025-09-29,34,Female,UK,Email
+C0513,2025-11-29,32,Male,UK,Paid Search
+C0514,2025-01-14,24,Non-binary,Canada,Email
+C0515,2025-07-18,28,Female,France,Organic
+C0516,2025-05-14,44,Non-binary,Germany,Paid Search
+C0517,2025-05-27,41,Male,Germany,Paid Search
+C0518,2025-03-11,23,Male,USA,Email
+C0519,2026-01-01,36,Non-binary,Germany,Organic
+C0520,2025-06-13,44,Non-binary,UK,Organic
+C0521,2025-10-05,18,Male,UK,Social Media
+C0522,2025-12-31,41,Non-binary,Canada,Social Media
+C0523,2025-04-25,27,Male,USA,Paid Search
+C0524,2025-05-02,41,Female,Germany,Organic
+C0525,2025-10-11,25,Female,France,Social Media
+C0526,2025-10-10,18,Male,Canada,Referral
+C0527,2025-02-03,18,Non-binary,UK,Email
+C0528,2025-09-03,35,Female,France,Email
+C0529,2025-10-22,38,Female,USA,Paid Search
+C0530,2025-11-25,24,Female,USA,Email
+C0531,2025-12-15,42,Male,France,Social Media
+C0532,2025-10-10,18,Male,France,Paid Search
+C0533,2025-08-10,34,Male,France,Organic
+C0534,2025-09-23,20,Male,Canada,Social Media
+C0535,2025-03-24,27,Female,UK,Paid Search
+C0536,2025-09-23,35,Female,UK,Organic
+C0537,2025-04-11,24,Male,France,Social Media
+C0538,2025-11-17,30,Non-binary,UK,Referral
+C0539,2025-02-17,47,Non-binary,France,Paid Search
+C0540,2025-10-25,28,Non-binary,Canada,Paid Search
+C0541,2025-11-16,45,Non-binary,France,Social Media
+C0542,2025-01-22,21,Male,USA,Organic
+C0543,2025-11-25,41,Non-binary,France,Social Media
+C0544,2025-04-18,52,Non-binary,France,Email
+C0545,2025-11-24,18,Non-binary,USA,Email
+C0546,2025-10-07,25,Female,UK,Social Media
+C0547,2025-05-06,41,Female,Germany,Social Media
+C0548,2025-02-07,32,Female,USA,Paid Search
+C0549,2025-08-01,39,Male,Germany,Email
+C0550,2025-06-24,27,Female,France,Paid Search
+C0551,2025-06-13,36,Male,UK,Email
+C0552,2025-07-09,33,Male,France,Referral
+C0553,2025-06-13,49,Male,Canada,Email
+C0554,2025-05-17,38,Male,Germany,Paid Search
+C0555,2025-02-19,39,Female,USA,Social Media
+C0556,2025-11-12,30,Male,Germany,Paid Search
+C0557,2025-06-17,29,Male,France,Social Media
+C0558,2025-03-23,29,Female,Germany,Referral
+C0559,2025-09-13,39,Male,UK,Email
+C0560,2025-02-16,29,Female,Germany,Referral
+C0561,2025-05-04,38,Female,Canada,Referral
+C0562,2025-01-25,59,Female,USA,Social Media
+C0563,2025-11-02,45,Non-binary,Germany,Social Media
+C0564,2025-01-05,31,Male,USA,Email
+C0565,2025-05-16,49,Female,UK,Email
+C0566,2025-01-24,30,Non-binary,Germany,Organic
+C0567,2025-10-15,18,Non-binary,Canada,Social Media
+C0568,2025-05-28,22,Non-binary,USA,Email
+C0569,2025-08-19,18,Non-binary,France,Social Media
+C0570,2025-12-15,30,Male,France,Organic
+C0571,2025-02-19,35,Female,Germany,Social Media
+C0572,2025-10-13,55,Male,UK,Paid Search
+C0573,2025-11-05,38,Non-binary,France,Email
+C0574,2025-01-21,32,Male,USA,Organic
+C0575,2026-01-01,44,Non-binary,UK,Email
+C0576,2025-08-22,18,Non-binary,Canada,Referral
+C0577,2025-03-13,37,Female,UK,Referral
+C0578,2025-03-25,44,Non-binary,Germany,Referral
+C0579,2025-06-03,18,Non-binary,France,Social Media
+C0580,2025-09-18,48,Non-binary,France,Email
+C0581,2025-10-16,39,Male,UK,Email
+C0582,2025-07-08,30,Female,UK,Organic
+C0583,2025-10-26,42,Non-binary,UK,Organic
+C0584,2025-08-31,62,Non-binary,UK,Referral
+C0585,2025-04-27,37,Female,USA,Referral
+C0586,2025-03-29,37,Female,France,Referral
+C0587,2025-03-17,29,Non-binary,Canada,Organic
+C0588,2025-12-25,24,Male,USA,Paid Search
+C0589,2025-08-14,44,Male,UK,Email
+C0590,2025-07-31,24,Non-binary,Canada,Email
+C0591,2025-11-10,35,Non-binary,Germany,Organic
+C0592,2025-03-12,29,Non-binary,France,Paid Search
+C0593,2025-06-16,40,Female,Germany,Referral
+C0594,2025-06-10,39,Non-binary,Canada,Email
+C0595,2025-06-25,47,Non-binary,France,Social Media
+C0596,2025-12-15,28,Female,UK,Referral
+C0597,2025-04-09,31,Non-binary,Canada,Social Media
+C0598,2025-06-02,23,Female,Canada,Social Media
+C0599,2025-12-27,29,Female,Canada,Email
+C0600,2025-09-03,39,Non-binary,UK,Referral
+C0601,2025-05-21,44,Non-binary,UK,Organic
+C0602,2025-12-13,23,Female,France,Email
+C0603,2025-06-26,45,Male,Canada,Social Media
+C0604,2025-05-28,51,Female,USA,Social Media
+C0605,2025-12-02,39,Male,UK,Email
+C0606,2025-04-14,57,Non-binary,France,Social Media
+C0607,2025-12-23,25,Male,UK,Paid Search
+C0608,2025-11-12,20,Male,France,Paid Search
+C0609,2025-01-26,18,Non-binary,France,Paid Search
+C0610,2025-04-30,52,Female,USA,Organic
+C0611,2025-06-19,42,Non-binary,Germany,Organic
+C0612,2025-03-12,34,Male,USA,Referral
+C0613,2025-07-28,38,Non-binary,Germany,Email
+C0614,2025-04-13,21,Female,UK,Social Media
+C0615,2025-11-27,64,Non-binary,USA,Organic
+C0616,2025-10-21,36,Non-binary,Canada,Referral
+C0617,2025-01-20,36,Male,Canada,Email
+C0618,2025-01-19,43,Male,Germany,Email
+C0619,2025-05-29,40,Female,USA,Organic
+C0620,2025-10-18,37,Female,France,Organic
+C0621,2025-05-26,25,Non-binary,Germany,Referral
+C0622,2025-09-10,40,Female,Canada,Referral
+C0623,2025-05-20,57,Female,Canada,Organic
+C0624,2025-03-25,51,Non-binary,Germany,Social Media
+C0625,2025-04-06,54,Female,USA,Social Media
+C0626,2025-10-18,28,Non-binary,Canada,Paid Search
+C0627,2025-11-24,23,Non-binary,Germany,Email
+C0628,2025-06-17,33,Non-binary,USA,Email
+C0629,2025-02-18,35,Female,Canada,Paid Search
+C0630,2025-06-15,48,Female,Canada,Organic
+C0631,2025-07-16,18,Female,Canada,Email
+C0632,2025-06-18,53,Non-binary,UK,Referral
+C0633,2025-10-21,33,Non-binary,USA,Social Media
+C0634,2025-07-04,29,Non-binary,Canada,Organic
+C0635,2025-03-02,22,Male,Germany,Social Media
+C0636,2025-07-27,18,Non-binary,France,Social Media
+C0637,2025-03-02,44,Non-binary,UK,Social Media
+C0638,2025-04-24,35,Female,Canada,Paid Search
+C0639,2025-03-20,19,Female,Germany,Referral
+C0640,2025-08-01,19,Non-binary,France,Email
+C0641,2025-12-07,30,Non-binary,Canada,Paid Search
+C0642,2025-11-02,55,Female,USA,Referral
+C0643,2025-09-28,31,Non-binary,UK,Organic
+C0644,2025-02-27,18,Non-binary,USA,Referral
+C0645,2025-04-14,32,Male,France,Referral
+C0646,2025-03-26,31,Female,UK,Referral
+C0647,2025-03-01,18,Female,Canada,Referral
+C0648,2025-02-16,34,Male,France,Email
+C0649,2025-08-21,32,Female,Canada,Referral
+C0650,2025-08-22,43,Non-binary,France,Organic
+C0651,2025-08-25,57,Female,UK,Organic
+C0652,2025-05-11,48,Non-binary,USA,Paid Search
+C0653,2025-02-07,31,Female,USA,Email
+C0654,2025-12-25,21,Male,USA,Referral
+C0655,2025-02-05,65,Female,Germany,Organic
+C0656,2025-07-29,35,Non-binary,Canada,Paid Search
+C0657,2025-11-27,35,Female,Germany,Social Media
+C0658,2025-08-18,34,Male,Germany,Email
+C0659,2025-12-16,37,Non-binary,France,Paid Search
+C0660,2025-06-28,33,Non-binary,USA,Paid Search
+C0661,2025-07-21,28,Non-binary,France,Paid Search
+C0662,2025-04-25,28,Female,USA,Organic
+C0663,2025-08-26,34,Non-binary,France,Email
+C0664,2025-07-14,28,Female,Canada,Paid Search
+C0665,2025-06-27,26,Male,Canada,Social Media
+C0666,2025-02-27,36,Non-binary,USA,Email
+C0667,2025-01-09,31,Male,Canada,Paid Search
+C0668,2025-02-21,53,Female,France,Organic
+C0669,2025-11-03,18,Non-binary,USA,Paid Search
+C0670,2025-01-23,48,Male,Germany,Email
+C0671,2025-10-04,49,Male,Canada,Organic
+C0672,2025-09-15,18,Non-binary,UK,Paid Search
+C0673,2025-10-22,30,Non-binary,UK,Referral
+C0674,2025-12-11,30,Female,UK,Paid Search
+C0675,2025-03-15,18,Female,France,Paid Search
+C0676,2025-06-03,25,Non-binary,UK,Organic
+C0677,2025-10-30,21,Non-binary,Canada,Email
+C0678,2025-09-11,56,Non-binary,USA,Social Media
+C0679,2025-12-10,46,Female,Germany,Referral
+C0680,2025-12-23,50,Male,Germany,Email
+C0681,2025-06-03,43,Non-binary,Germany,Paid Search
+C0682,2025-08-31,21,Female,Canada,Paid Search
+C0683,2025-12-29,28,Male,Canada,Email
+C0684,2025-10-15,40,Non-binary,Germany,Email
+C0685,2025-09-29,20,Male,Canada,Email
+C0686,2025-05-11,43,Non-binary,Canada,Social Media
+C0687,2025-02-10,32,Male,Germany,Social Media
+C0688,2025-10-02,30,Female,Canada,Organic
+C0689,2025-07-13,43,Male,France,Referral
+C0690,2025-02-07,40,Non-binary,Canada,Referral
+C0691,2025-12-10,30,Female,France,Paid Search
+C0692,2025-04-17,48,Male,UK,Social Media
+C0693,2025-04-19,22,Non-binary,Canada,Organic
+C0694,2025-09-03,42,Non-binary,Canada,Referral
+C0695,2025-04-15,42,Non-binary,Germany,Paid Search
+C0696,2025-06-14,31,Female,UK,Email
+C0697,2025-10-01,38,Female,UK,Social Media
+C0698,2025-07-04,19,Female,France,Email
+C0699,2025-02-20,46,Male,Germany,Social Media
+C0700,2025-07-09,32,Male,UK,Email
+C0701,2025-10-16,28,Male,Canada,Paid Search
+C0702,2025-05-14,47,Non-binary,France,Referral
+C0703,2025-08-02,26,Male,UK,Paid Search
+C0704,2025-06-18,18,Non-binary,Canada,Email
+C0705,2025-05-06,18,Non-binary,Germany,Referral
+C0706,2025-12-17,42,Female,UK,Social Media
+C0707,2025-11-25,19,Male,Germany,Email
+C0708,2025-06-30,56,Non-binary,Canada,Paid Search
+C0709,2025-10-07,18,Non-binary,Germany,Paid Search
+C0710,2025-11-25,55,Male,USA,Referral
+C0711,2025-02-08,37,Female,USA,Organic
+C0712,2025-03-12,33,Non-binary,Canada,Organic
+C0713,2025-03-19,28,Non-binary,USA,Paid Search
+C0714,2025-08-22,39,Non-binary,UK,Organic
+C0715,2025-11-23,34,Non-binary,France,Email
+C0716,2025-09-07,48,Non-binary,USA,Organic
+C0717,2025-10-10,36,Male,Germany,Organic
+C0718,2025-09-29,36,Female,UK,Referral
+C0719,2025-01-09,30,Male,France,Email
+C0720,2025-02-24,34,Male,USA,Referral
+C0721,2025-05-04,38,Non-binary,Canada,Referral
+C0722,2025-05-10,18,Female,UK,Social Media
+C0723,2025-02-10,18,Female,UK,Email
+C0724,2025-10-17,43,Female,Canada,Paid Search
+C0725,2025-12-17,37,Male,USA,Organic
+C0726,2025-07-27,32,Non-binary,Germany,Email
+C0727,2025-09-01,35,Non-binary,USA,Organic
+C0728,2025-03-29,39,Female,USA,Email
+C0729,2025-11-27,28,Male,UK,Referral
+C0730,2025-09-28,25,Male,USA,Paid Search
+C0731,2025-12-21,37,Female,France,Email
+C0732,2025-01-24,23,Non-binary,USA,Social Media
+C0733,2025-10-16,39,Female,USA,Paid Search
+C0734,2025-01-09,18,Male,Canada,Referral
+C0735,2025-12-31,47,Female,Germany,Organic
+C0736,2025-03-25,40,Non-binary,France,Paid Search
+C0737,2025-07-19,38,Female,France,Social Media
+C0738,2025-03-13,46,Non-binary,USA,Referral
+C0739,2025-06-27,54,Female,USA,Organic
+C0740,2025-04-29,47,Non-binary,USA,Social Media
+C0741,2025-11-11,18,Female,France,Email
+C0742,2025-01-16,19,Female,UK,Email
+C0743,2025-04-27,27,Female,UK,Referral
+C0744,2025-08-10,35,Non-binary,Canada,Referral
+C0745,2025-07-14,41,Female,USA,Referral
+C0746,2025-05-07,26,Female,USA,Organic
+C0747,2025-03-20,37,Non-binary,Germany,Paid Search
+C0748,2025-07-19,25,Male,UK,Social Media
+C0749,2025-02-16,27,Female,USA,Social Media
+C0750,2025-07-04,18,Male,UK,Organic
+C0751,2025-02-14,23,Female,Canada,Email
+C0752,2025-10-13,18,Female,France,Referral
+C0753,2025-02-22,23,Female,USA,Organic
+C0754,2025-10-11,47,Non-binary,USA,Referral
+C0755,2025-06-16,23,Female,Germany,Organic
+C0756,2025-07-31,66,Non-binary,Germany,Organic
+C0757,2025-10-14,40,Non-binary,Canada,Referral
+C0758,2025-03-28,37,Male,Germany,Paid Search
+C0759,2025-05-18,24,Female,UK,Social Media
+C0760,2025-03-16,43,Female,USA,Paid Search
+C0761,2025-05-22,28,Female,Germany,Social Media
+C0762,2025-02-09,36,Male,UK,Social Media
+C0763,2025-11-17,65,Non-binary,Germany,Referral
+C0764,2025-04-11,33,Male,Germany,Organic
+C0765,2025-06-05,48,Female,USA,Email
+C0766,2025-11-14,26,Female,Germany,Social Media
+C0767,2025-06-21,34,Male,Germany,Referral
+C0768,2025-06-03,56,Non-binary,UK,Referral
+C0769,2025-04-13,27,Male,Germany,Social Media
+C0770,2025-07-23,56,Non-binary,UK,Social Media
+C0771,2025-12-22,43,Male,Germany,Referral
+C0772,2025-06-16,28,Female,Germany,Social Media
+C0773,2025-07-06,42,Male,USA,Referral
+C0774,2025-10-31,46,Non-binary,France,Paid Search
+C0775,2025-10-09,42,Non-binary,USA,Email
+C0776,2025-04-18,18,Non-binary,Germany,Social Media
+C0777,2025-02-05,26,Male,Germany,Email
+C0778,2025-11-21,32,Female,UK,Paid Search
+C0779,2025-12-04,34,Female,Canada,Email
+C0780,2025-02-07,42,Female,Germany,Referral
+C0781,2025-10-26,37,Non-binary,Germany,Referral
+C0782,2025-12-21,18,Male,Germany,Referral
+C0783,2025-07-04,39,Non-binary,France,Referral
+C0784,2025-02-13,42,Non-binary,USA,Paid Search
+C0785,2025-12-07,41,Non-binary,UK,Paid Search
+C0786,2025-11-10,47,Non-binary,USA,Referral
+C0787,2025-12-13,45,Female,Germany,Social Media
+C0788,2025-02-24,40,Female,USA,Organic
+C0789,2025-04-24,34,Non-binary,France,Referral
+C0790,2025-10-25,18,Female,France,Paid Search
+C0791,2025-07-11,40,Non-binary,Germany,Email
+C0792,2025-10-29,37,Female,France,Paid Search
+C0793,2025-01-13,38,Female,Germany,Organic
+C0794,2025-08-01,19,Non-binary,USA,Organic
+C0795,2025-03-14,22,Female,UK,Social Media
+C0796,2025-08-22,47,Female,Canada,Referral
+C0797,2025-06-28,34,Female,Germany,Organic
+C0798,2025-12-23,43,Male,Germany,Social Media
+C0799,2025-06-03,35,Male,USA,Organic
+C0800,2025-06-25,35,Non-binary,USA,Paid Search
+C0801,2025-05-05,46,Non-binary,France,Paid Search
+C0802,2025-03-23,28,Female,UK,Referral
+C0803,2025-08-25,36,Non-binary,Canada,Email
+C0804,2025-04-05,29,Female,Canada,Email
+C0805,2025-01-15,29,Female,France,Paid Search
+C0806,2025-10-31,31,Male,Germany,Email
+C0807,2025-12-27,37,Female,Canada,Paid Search
+C0808,2025-12-27,29,Male,USA,Referral
+C0809,2025-10-02,50,Female,Canada,Social Media
+C0810,2025-04-11,24,Female,Germany,Organic
+C0811,2025-12-10,32,Non-binary,Germany,Referral
+C0812,2025-06-10,29,Non-binary,France,Email
+C0813,2025-07-20,52,Female,France,Organic
+C0814,2025-06-30,37,Male,Germany,Referral
+C0815,2025-12-11,47,Non-binary,UK,Referral
+C0816,2025-02-13,18,Male,Canada,Social Media
+C0817,2025-05-03,38,Male,UK,Organic
+C0818,2025-07-11,45,Female,Canada,Referral
+C0819,2025-08-03,35,Non-binary,France,Paid Search
+C0820,2025-07-16,47,Female,Germany,Paid Search
+C0821,2025-11-22,28,Non-binary,France,Paid Search
+C0822,2025-03-27,51,Male,Germany,Social Media
+C0823,2025-04-06,62,Non-binary,UK,Email
+C0824,2025-01-28,30,Female,UK,Organic
+C0825,2025-03-11,29,Non-binary,Canada,Email
+C0826,2025-09-16,52,Non-binary,Germany,Email
+C0827,2025-09-09,53,Female,Germany,Email
+C0828,2025-03-27,28,Male,USA,Referral
+C0829,2025-04-23,29,Female,UK,Organic
+C0830,2025-04-26,31,Male,France,Social Media
+C0831,2025-08-23,18,Non-binary,France,Email
+C0832,2025-09-19,23,Male,USA,Referral
+C0833,2025-05-18,22,Non-binary,France,Social Media
+C0834,2025-01-22,25,Male,Germany,Referral
+C0835,2025-08-06,34,Female,USA,Paid Search
+C0836,2025-01-17,37,Female,Germany,Social Media
+C0837,2025-02-14,53,Male,Germany,Organic
+C0838,2025-04-18,23,Non-binary,France,Social Media
+C0839,2025-11-09,46,Non-binary,Germany,Paid Search
+C0840,2025-03-13,32,Male,Canada,Paid Search
+C0841,2025-10-19,34,Female,UK,Referral
+C0842,2025-11-02,43,Female,France,Paid Search
+C0843,2025-12-27,21,Non-binary,UK,Social Media
+C0844,2025-05-17,39,Male,France,Organic
+C0845,2025-07-30,36,Non-binary,USA,Social Media
+C0846,2025-03-06,40,Male,Canada,Paid Search
+C0847,2025-12-31,38,Non-binary,UK,Paid Search
+C0848,2025-07-21,64,Non-binary,Germany,Paid Search
+C0849,2025-11-20,27,Female,UK,Email
+C0850,2025-08-20,28,Female,USA,Organic
+C0851,2025-09-21,27,Female,UK,Social Media
+C0852,2025-09-07,28,Male,UK,Referral
+C0853,2025-02-17,27,Male,Germany,Social Media
+C0854,2025-10-01,49,Female,Germany,Paid Search
+C0855,2025-04-19,52,Female,Germany,Social Media
+C0856,2025-05-26,28,Non-binary,UK,Referral
+C0857,2025-03-08,25,Female,France,Email
+C0858,2025-12-16,40,Male,USA,Organic
+C0859,2025-11-17,28,Male,Germany,Organic
+C0860,2025-03-22,42,Male,Germany,Email
+C0861,2025-08-08,37,Non-binary,Canada,Paid Search
+C0862,2025-06-04,18,Male,Canada,Social Media
+C0863,2025-12-02,53,Male,UK,Social Media
+C0864,2025-07-10,56,Female,Canada,Organic
+C0865,2025-11-17,27,Female,UK,Paid Search
+C0866,2025-12-02,30,Male,USA,Organic
+C0867,2025-04-20,38,Male,Germany,Organic
+C0868,2025-10-31,39,Non-binary,Canada,Referral
+C0869,2025-08-16,42,Non-binary,USA,Organic
+C0870,2025-06-25,59,Non-binary,USA,Email
+C0871,2025-03-09,32,Male,Germany,Organic
+C0872,2025-07-16,25,Male,USA,Organic
+C0873,2025-06-10,18,Male,UK,Social Media
+C0874,2025-07-15,26,Male,Canada,Paid Search
+C0875,2025-09-29,34,Non-binary,France,Organic
+C0876,2025-11-29,56,Female,Canada,Email
+C0877,2025-04-20,28,Non-binary,Canada,Email
+C0878,2025-12-18,37,Male,Germany,Paid Search
+C0879,2025-02-21,34,Non-binary,Canada,Organic
+C0880,2025-07-16,49,Female,UK,Email
+C0881,2025-03-13,65,Non-binary,Canada,Social Media
+C0882,2025-02-13,28,Non-binary,Canada,Referral
+C0883,2025-11-04,29,Non-binary,France,Social Media
+C0884,2025-01-14,47,Non-binary,UK,Paid Search
+C0885,2025-11-07,43,Non-binary,France,Paid Search
+C0886,2025-07-20,57,Male,UK,Organic
+C0887,2025-09-11,42,Male,Germany,Organic
+C0888,2025-09-13,30,Non-binary,France,Organic
+C0889,2025-01-07,42,Male,UK,Social Media
+C0890,2025-07-18,48,Female,France,Email
+C0891,2025-10-07,44,Male,Canada,Email
+C0892,2025-01-09,41,Male,France,Organic
+C0893,2025-05-15,47,Male,Canada,Organic
+C0894,2025-07-23,49,Non-binary,France,Social Media
+C0895,2025-12-31,51,Female,France,Email
+C0896,2025-12-26,42,Non-binary,Germany,Organic
+C0897,2025-10-02,32,Male,France,Referral
+C0898,2025-05-23,36,Male,USA,Social Media
+C0899,2025-09-19,49,Non-binary,Canada,Paid Search
+C0900,2025-06-17,25,Non-binary,Germany,Referral
+C0901,2025-11-29,39,Non-binary,USA,Social Media
+C0902,2025-08-12,30,Male,Canada,Organic
+C0903,2025-02-14,35,Female,Germany,Organic
+C0904,2025-11-10,50,Female,France,Organic
+C0905,2025-12-08,37,Male,Canada,Organic
+C0906,2025-12-29,35,Male,Canada,Organic
+C0907,2025-09-12,18,Non-binary,UK,Referral
+C0908,2025-05-13,43,Male,Canada,Social Media
+C0909,2025-05-18,42,Female,USA,Organic
+C0910,2025-08-08,60,Male,UK,Referral
+C0911,2025-05-15,31,Female,France,Organic
+C0912,2025-08-22,37,Male,France,Social Media
+C0913,2025-09-13,37,Female,France,Paid Search
+C0914,2025-03-22,53,Non-binary,UK,Organic
+C0915,2025-12-12,33,Non-binary,USA,Paid Search
+C0916,2025-09-18,38,Male,USA,Organic
+C0917,2025-05-06,42,Female,USA,Email
+C0918,2025-07-16,37,Male,Canada,Paid Search
+C0919,2025-10-11,29,Female,Germany,Paid Search
+C0920,2025-05-08,37,Female,Germany,Social Media
+C0921,2025-02-09,47,Male,France,Social Media
+C0922,2025-09-15,22,Male,USA,Paid Search
+C0923,2025-09-22,36,Male,USA,Email
+C0924,2025-08-27,26,Female,UK,Social Media
+C0925,2025-02-14,49,Male,France,Email
+C0926,2025-07-08,18,Non-binary,Canada,Social Media
+C0927,2025-06-05,28,Female,France,Paid Search
+C0928,2025-07-08,39,Male,France,Email
+C0929,2025-10-07,53,Male,Canada,Paid Search
+C0930,2025-07-29,34,Non-binary,USA,Paid Search
+C0931,2025-06-27,28,Male,USA,Social Media
+C0932,2025-12-03,57,Male,Germany,Social Media
+C0933,2025-04-16,18,Female,France,Paid Search
+C0934,2025-09-09,18,Non-binary,USA,Paid Search
+C0935,2025-05-24,40,Male,USA,Organic
+C0936,2025-09-24,28,Female,Germany,Social Media
+C0937,2025-02-13,22,Non-binary,France,Organic
+C0938,2025-03-10,43,Non-binary,Germany,Organic
+C0939,2025-10-18,37,Non-binary,USA,Email
+C0940,2025-03-08,28,Female,Canada,Social Media
+C0941,2025-06-11,19,Female,Germany,Social Media
+C0942,2025-08-20,45,Male,UK,Paid Search
+C0943,2025-04-14,42,Male,Canada,Referral
+C0944,2025-03-21,33,Female,USA,Paid Search
+C0945,2025-08-27,57,Male,UK,Email
+C0946,2025-10-02,22,Female,UK,Paid Search
+C0947,2025-06-07,18,Male,Germany,Social Media
+C0948,2025-02-16,26,Non-binary,Canada,Social Media
+C0949,2025-12-23,34,Male,France,Organic
+C0950,2025-06-17,37,Non-binary,Canada,Organic
+C0951,2025-05-08,32,Non-binary,UK,Email
+C0952,2025-01-26,39,Male,UK,Social Media
+C0953,2025-01-16,19,Non-binary,Germany,Email
+C0954,2025-10-09,52,Female,Canada,Organic
+C0955,2025-02-22,34,Male,Canada,Organic
+C0956,2025-02-01,48,Male,Canada,Paid Search
+C0957,2025-07-25,39,Non-binary,UK,Organic
+C0958,2025-10-28,40,Male,UK,Organic
+C0959,2025-02-03,41,Male,Canada,Email
+C0960,2025-02-17,40,Male,UK,Organic
+C0961,2025-08-25,42,Non-binary,USA,Paid Search
+C0962,2025-08-10,50,Male,Germany,Email
+C0963,2025-07-15,37,Female,Germany,Paid Search
+C0964,2025-04-20,43,Female,Canada,Social Media
+C0965,2025-08-17,33,Non-binary,Canada,Organic
+C0966,2025-11-14,52,Non-binary,France,Paid Search
+C0967,2025-06-01,26,Non-binary,Germany,Email
+C0968,2025-09-03,56,Female,USA,Organic
+C0969,2025-07-16,34,Male,Canada,Email
+C0970,2025-11-26,18,Non-binary,France,Paid Search
+C0971,2025-10-06,36,Non-binary,USA,Email
+C0972,2025-07-03,26,Female,Germany,Referral
+C0973,2025-06-26,45,Female,France,Referral
+C0974,2025-07-18,27,Male,UK,Paid Search
+C0975,2025-06-13,29,Male,France,Paid Search
+C0976,2025-05-24,18,Non-binary,USA,Email
+C0977,2025-07-03,29,Male,France,Paid Search
+C0978,2025-02-21,18,Female,Canada,Paid Search
+C0979,2025-10-01,18,Non-binary,USA,Paid Search
+C0980,2025-07-18,44,Male,UK,Paid Search
+C0981,2025-05-02,44,Non-binary,France,Social Media
+C0982,2025-12-24,40,Male,UK,Referral
+C0983,2025-12-27,23,Non-binary,UK,Referral
+C0984,2025-03-14,34,Female,France,Paid Search
+C0985,2025-10-05,34,Female,UK,Paid Search
+C0986,2025-01-20,21,Male,USA,Organic
+C0987,2025-11-05,53,Non-binary,Canada,Organic
+C0988,2025-09-02,45,Non-binary,USA,Social Media
+C0989,2025-04-14,32,Non-binary,Canada,Social Media
+C0990,2025-04-01,35,Male,UK,Organic
+C0991,2025-03-17,37,Male,France,Paid Search
+C0992,2025-09-27,18,Female,UK,Organic
+C0993,2025-12-27,32,Male,Germany,Referral
+C0994,2025-06-22,26,Male,UK,Social Media
+C0995,2025-03-22,22,Non-binary,Germany,Email
+C0996,2025-06-12,31,Non-binary,Canada,Referral
+C0997,2025-11-11,56,Non-binary,UK,Paid Search
+C0998,2025-10-29,42,Female,Canada,Email
+C0999,2025-12-19,28,Male,UK,Paid Search
+C1000,2025-01-01,41,Non-binary,France,Email

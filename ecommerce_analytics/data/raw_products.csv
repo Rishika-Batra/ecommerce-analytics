@@ -1,0 +1,51 @@
+product_id,product_name,category,price,stock_quantity
+P001,Laptop v1,Electronics,909.71,318
+P002,Laptop v2,Electronics,995.46,424
+P003,Headphones v1,Electronics,178.53,123
+P004,Headphones v2,Electronics,163.77,63
+P005,Smartphone v1,Electronics,944.79,82
+P006,Smartphone v2,Electronics,799.47,49
+P007,Smartwatch v1,Electronics,242.84,173
+P008,Smartwatch v2,Electronics,237.58,463
+P009,Bluetooth Speaker v1,Electronics,95.1,430
+P010,Bluetooth Speaker v2,Electronics,89.0,337
+P011,T-Shirt v1,Apparel,27.96,181
+P012,T-Shirt v2,Apparel,25.84,145
+P013,Jeans v1,Apparel,57.76,364
+P014,Jeans v2,Apparel,55.21,141
+P015,Hoodie v1,Apparel,56.79,378
+P016,Hoodie v2,Apparel,45.01,207
+P017,Sneakers v1,Apparel,92.82,224
+P018,Sneakers v2,Apparel,107.15,462
+P019,Jacket v1,Apparel,122.89,461
+P020,Jacket v2,Apparel,121.62,289
+P021,Coffee Maker v1,Home,91.12,434
+P022,Coffee Maker v2,Home,93.94,452
+P023,Desk Lamp v1,Home,37.56,398
+P024,Desk Lamp v2,Home,38.7,93
+P025,Office Chair v1,Home,207.07,419
+P026,Office Chair v2,Home,230.73,160
+P027,Blender v1,Home,45.29,143
+P028,Blender v2,Home,59.26,47
+P029,Vacuum Cleaner v1,Home,150.37,464
+P030,Vacuum Cleaner v2,Home,151.89,384
+P031,Skincare Set v1,Beauty,41.51,492
+P032,Skincare Set v2,Beauty,52.62,57
+P033,Perfume v1,Beauty,75.1,324
+P034,Perfume v2,Beauty,87.6,370
+P035,Lipstick v1,Beauty,18.18,492
+P036,Lipstick v2,Beauty,21.91,320
+P037,Hair Dryer v1,Beauty,70.0,90
+P038,Hair Dryer v2,Beauty,54.95,179
+P039,Face Mask v1,Beauty,12.02,107
+P040,Face Mask v2,Beauty,12.78,293
+P041,Yoga Mat v1,Sports,33.49,383
+P042,Yoga Mat v2,Sports,31.85,348
+P043,Dumbbells Set v1,Sports,68.9,131
+P044,Dumbbells Set v2,Sports,65.0,211
+P045,Water Bottle v1,Sports,21.42,440
+P046,Water Bottle v2,Sports,20.94,37
+P047,Running Shoes v1,Sports,100.81,228
+P048,Running Shoes v2,Sports,92.62,431
+P049,Backpack v1,Sports,54.92,317
+P050,Backpack v2,Sports,52.19,59

@@ -1,0 +1,21 @@
+{
+    "gender": {
+        "Female": 0,
+        "Male": 1,
+        "Non-binary": 2
+    },
+    "country": {
+        "Canada": 0,
+        "France": 1,
+        "Germany": 2,
+        "UK": 3,
+        "USA": 4
+    },
+    "acquisition_channel": {
+        "Email": 0,
+        "Organic": 1,
+        "Paid Search": 2,
+        "Referral": 3,
+        "Social Media": 4
+    }
+}

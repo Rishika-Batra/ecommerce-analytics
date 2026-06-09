@@ -1,0 +1,51 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: customers
+        config:
+          external_location: "read_csv_auto('../data/raw_customers.csv')"
+        description: "Raw customer demographic and channel registration logs"
+        columns:
+          - name: customer_id
+            tests:
+              - unique
+              - not_null
+      - name: products
+        config:
+          external_location: "read_csv_auto('../data/raw_products.csv')"
+        description: "Raw products catalog with pricing and starting stock"
+        columns:
+          - name: product_id
+            tests:
+              - unique
+              - not_null
+      - name: orders
+        config:
+          external_location: "read_csv_auto('../data/raw_orders.csv')"
+        description: "Raw transaction order records"
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+      - name: order_items
+        config:
+          external_location: "read_csv_auto('../data/raw_order_items.csv')"
+        description: "Line items detailed per order"
+        columns:
+          - name: item_id
+            tests:
+              - unique
+              - not_null
+      - name: web_events
+        config:
+          external_location: "read_csv_auto('../data/raw_web_events.csv')"
+        description: "User interaction tracking web clickstream logs"
+        columns:
+          - name: event_id
+            tests:
+              - unique
+              - not_null

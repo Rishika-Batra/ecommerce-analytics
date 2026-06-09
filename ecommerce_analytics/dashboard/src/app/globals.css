@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  /* Surfaces */
+  --surface-0: #080808;
+  --surface-1: #0f0f0f;
+  --surface-2: rgba(255, 255, 255, 0.04);
+  --surface-3: rgba(255, 255, 255, 0.06);
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.12);
+
+  /* Accent */
+  --accent: #7c6ff7;
+  --accent-emerald: #34d399;
+  --accent-amber: #fbbf24;
+  --accent-rose: #fb7185;
+
+  /* Text */
+  --text-1: rgba(255, 255, 255, 0.95);
+  --text-2: rgba(255, 255, 255, 0.6);
+  --text-3: rgba(255, 255, 255, 0.35);
+}
+
+/* Base */
+body {
+  background: var(--surface-0);
+  color: var(--text-1);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+}
+
+/* Glass system (upgraded) */
+.glass-sm {
+  background: var(--surface-2);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(12px);
+}
+
+.glass-md {
+  background: var(--surface-2);
+  border: 1px solid var(--border-default);
+  backdrop-filter: blur(20px);
+}
+
+.glass-lg {
+  background: var(--surface-3);
+  border: 1px solid var(--border-strong);
+  backdrop-filter: blur(28px);
+}
+
+/* Hover glass */
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Layout system */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section {
+  margin-top: 32px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Inputs */
+.apple-input {
+  width: 100%;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.apple-input:focus {
+  border-color: rgba(124, 111, 247, 0.6);
+  box-shadow: 0 0 0 3px rgba(124, 111, 247, 0.15);
+}
