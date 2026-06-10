@@ -159,6 +159,9 @@ function RevenueChart({ data }) {
   const [hovered, setHovered] = useState(null);
   if (!Array.isArray(data) || data.length === 0) return null;
   const max = Math.max(...data.map(d => d.revenue));
+  const min = Math.min(...data.map(d => d.revenue));
+  const yLabels = [max, Math.round((max + min) / 2), min];
+
   return (
     <div className="glass-md rounded-xl p-5">
       <div className="flex items-center justify-between mb-5">
@@ -166,35 +169,104 @@ function RevenueChart({ data }) {
           <div className="text-sm font-medium">Revenue trend</div>
           <div className="text-xs text-white/40 mt-0.5">Monthly, last 12 months</div>
         </div>
-        <span className="text-xs text-white/30 font-mono">2025</span>
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5">
+            <div className="w-2.5 h-2.5 rounded-sm bg-violet-500/60" />
+            <span className="text-[11px] text-white/40">Revenue</span>
+          </div>
+          <span className="text-xs text-white/20 font-mono">2025</span>
+        </div>
       </div>
-      <div className="flex items-end gap-1.5 h-36 relative">
-        {data.map((d, i) => {
-          const h = (d.revenue / max) * 100;
-          const isHov = hovered === i;
-          return (
-            <div key={i} className="flex-1 flex flex-col items-center gap-1.5 group cursor-default" onMouseEnter={() => setHovered(i)} onMouseLeave={() => setHovered(null)}>
-              {isHov && (
-                <div className="absolute -top-1 left-1/2 -translate-x-1/2 bg-[#1a1a2e] border border-white/10 rounded-lg px-2.5 py-1.5 z-10 whitespace-nowrap pointer-events-none"
-                  style={{ left: `${(i / data.length) * 100}%` }}>
-                  <div className="text-xs font-medium">₹{(d.revenue / 1000).toFixed(1)}k</div>
-                  <div className="text-[10px] text-white/40">{d.orders} orders</div>
-                </div>
-              )}
-              <div className="w-full flex-1 flex items-end">
-                <div
-                  className="w-full rounded-sm transition-all duration-200"
-                  style={{
-                    height: `${h}%`,
-                    background: isHov ? "#7c6ff7" : "rgba(124,111,247,0.3)",
-                    minHeight: 3,
-                  }}
-                />
-              </div>
-              <span className="text-[10px] text-white/25">{d.month}</span>
+
+      <div className="flex gap-3">
+        {/* Y axis */}
+        <div className="flex flex-col justify-between pb-6 shrink-0">
+          {yLabels.map((v, i) => (
+            <span key={i} className="text-[10px] text-white/25 font-mono text-right">
+              ₹{(v / 1000).toFixed(0)}k
+            </span>
+          ))}
+        </div>
+
+        {/* Chart area */}
+        <div className="flex-1 flex flex-col">
+          {/* Grid lines */}
+          <div className="flex-1 relative flex flex-col justify-between pb-6" style={{ minHeight: 160 }}>
+            {[0, 1, 2].map(i => (
+              <div key={i} className="absolute w-full border-t border-white/5" style={{ top: `${(i / 2) * 100}%` }} />
+            ))}
+
+            {/* Bars */}
+            <div className="absolute inset-0 pb-6 flex items-end gap-1.5">
+              {data.map((d, i) => {
+                const h = Math.max((d.revenue / max) * 100, 4);
+                const isHov = hovered === i;
+                return (
+                  <div
+                    key={i}
+                    className="flex-1 flex flex-col items-center cursor-default relative group"
+                    style={{ height: "100%" }}
+                    onMouseEnter={() => setHovered(i)}
+                    onMouseLeave={() => setHovered(null)}
+                  >
+                    {/* Tooltip */}
+                    {isHov && (
+                      <div className="absolute bottom-[105%] left-1/2 -translate-x-1/2 bg-[#1a1a2e] border border-violet-500/30 rounded-lg px-3 py-2 z-20 whitespace-nowrap shadow-xl">
+                        <div className="text-xs font-semibold text-violet-300">₹{(d.revenue / 1000).toFixed(1)}k</div>
+                        <div className="text-[10px] text-white/40 mt-0.5">{d.orders.toLocaleString()} orders</div>
+                        <div className="text-[10px] text-white/30">{d.month} 2025</div>
+                      </div>
+                    )}
+                    {/* Bar */}
+                    <div className="w-full flex items-end" style={{ height: "100%" }}>
+                      <div
+                        className="w-full rounded-t-md transition-all duration-300"
+                        style={{
+                          height: `${h}%`,
+                          background: isHov
+                            ? "linear-gradient(180deg, #9b8ff9 0%, #7c6ff7 100%)"
+                            : "linear-gradient(180deg, rgba(124,111,247,0.7) 0%, rgba(124,111,247,0.35) 100%)",
+                          boxShadow: isHov ? "0 0 12px rgba(124,111,247,0.4)" : "none",
+                        }}
+                      />
+                    </div>
+                  </div>
+                );
+              })}
             </div>
-          );
-        })}
+
+            {/* X axis labels */}
+            <div className="absolute bottom-0 left-0 right-0 flex gap-1.5">
+              {data.map((d, i) => (
+                <div key={i} className="flex-1 text-center">
+                  <span className="text-[10px] text-white/30">{d.month}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Summary row */}
+      <div className="flex gap-4 mt-4 pt-4 border-t border-white/5">
+        <div>
+          <div className="text-[10px] text-white/30 mb-0.5">Peak month</div>
+          <div className="text-xs font-medium text-violet-300">
+            {data.reduce((a, b) => a.revenue > b.revenue ? a : b).month} — ₹{(max / 1000).toFixed(1)}k
+          </div>
+        </div>
+        <div>
+          <div className="text-[10px] text-white/30 mb-0.5">Total 2025</div>
+          <div className="text-xs font-medium">
+            ₹{(data.reduce((s, d) => s + d.revenue, 0) / 100000).toFixed(1)}L
+          </div>
+        </div>
+        <div>
+          <div className="text-[10px] text-white/30 mb-0.5">Avg / month</div>
+          <div className="text-xs font-medium">
+            ₹{(data.reduce((s, d) => s + d.revenue, 0) / data.length / 1000).toFixed(1)}k
+          </div>
+        </div>
       </div>
     </div>
   );
