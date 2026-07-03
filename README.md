@@ -1,6 +1,6 @@
 # Ecommerce Analytics Engine
 
-A full-stack data analytics platform that ingests raw ecommerce data, models it with **dbt + DuckDB**, trains **XGBoost** ML models for churn and CLV prediction, serves predictions via a **FastAPI** REST layer, and visualises everything in a **Next.js** dashboard.
+A full-stack data analytics platform that ingests raw ecommerce data, models it with **dbt + DuckDB**, trains **XGBoost** ML models for churn and CLV prediction, serves predictions via a **FastAPI** REST layer and visualises everything in a **Next.js** dashboard.
 
 ---
 
